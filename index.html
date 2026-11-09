@@ -1,0 +1,3222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fort Payne Roofing | Roof Repair &amp; Replacement in Fort Payne, AL</title>
+<meta name="description" content="Looking for a reliable roofer in Fort Payne? We handle roof replacements, repairs, metal roofing and commercial projects. Request a free estimate today." />
+<meta property="og:title" content="Fort Payne Roofing | Roof Repair &amp; Replacement in Fort Payne, AL" />
+<meta property="og:description" content="Looking for a reliable roofer in Fort Payne? We handle roof replacements, repairs, metal roofing and commercial projects. Request a free estimate today." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/fort-payneroofing-clone/images/favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/png" sizes="32x32" href="/fort-payneroofing-clone/images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/fort-payneroofing-clone/images/favicon-192.png" />
+<link rel="apple-touch-icon" href="/fort-payneroofing-clone/images/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "name": "Fort Payne Roofing LLC",
+  "telephone": "+1-256-630-5125",
+  "email": "fortpayneroofing@gmail.com",
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1506 Gault Avenue North, Suite A",
+    "addressLocality": "Fort Payne",
+    "addressRegion": "AL",
+    "postalCode": "35967",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.45513,
+    "longitude": -85.71022
+  },
+  "description": "Shingle and metal roof installation, commercial roofing, and roof repairs. Locally owned and operated in Fort Payne, Alabama.",
+  "foundingDate": "2021",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "DeKalb County, AL" },
+    { "@type": "AdministrativeArea", "name": "Jackson County, AL" },
+    { "@type": "AdministrativeArea", "name": "Marshall County, AL" },
+    { "@type": "AdministrativeArea", "name": "Etowah County, AL" },
+    { "@type": "City", "name": "Guntersville, AL" }
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  }
+}
+</script>
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__fprReady)document.documentElement.classList.add('no-reveal');},2500);</script>
+<style>
+/* ============================================================
+   Fort Payne Roofing LLC — design system
+   White / ink / gold. Light, cinematic-but-clean contractor site.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,18,400;1,18,500&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --white: #ffffff;
+  --paper: #fbf9f5;
+  --panel: #f3efe5;
+  --panel-2: #ebe4d4;
+  --ink: #17140d;
+  --black: #14120c;
+  --black-deep: #0a0904;
+  --text: #34301f;
+  --muted: #746a56;
+  --muted-dim: #a89d84;
+  --gold: #b5872f;
+  --gold-bright: #d9a53f;
+  --gold-deep: #7c5a1e;
+  --gold-ink: #1a1407;
+  --line: rgba(23, 20, 13, 0.14);
+  --line-soft: rgba(23, 20, 13, 0.08);
+  --line-onDark: rgba(255, 255, 255, 0.16);
+
+  --font-display: 'Oswald', 'Arial Narrow', -apple-system, sans-serif;
+  --font-accent: 'Newsreader', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-h: 84px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; background: var(--paper); overflow-x: hidden; touch-action: pan-y; }
+
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  /* Without this, a touch browser is free to interpret a not-perfectly-
+     vertical finger drag as scroll in both axes at once, which reads as
+     the page scrolling "slanted" whenever a swipe starts off-center.
+     Restricting the whole page to vertical panning makes every scroll
+     gesture resolve to pure vertical motion regardless of exactly where or
+     how straight the finger moves. Elements that genuinely need sideways
+     touch scrolling (the before/after slider, the chat suggestion chips)
+     opt back in locally. */
+  touch-action: pan-y;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+.container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+
+/* Unified cinematic photo grade — kept even on a light page; photos are the
+   one place this site still goes moody/cinematic. */
+.grade { position: relative; overflow: hidden; background: var(--black-deep); }
+.grade img, .grade video {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.1) brightness(0.92) saturate(0.94);
+}
+.grade img:not(.parallax-img) { transition: transform 1.4s var(--ease); }
+.grade::before {
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(10,9,4,0.06) 0%, rgba(10,9,4,0.02) 45%, rgba(10,9,4,0.4) 100%);
+}
+.grade.dark::after {
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(10,9,4,0) 0%, rgba(10,9,4,0.22) 60%, rgba(10,9,4,0.82) 100%),
+              linear-gradient(90deg, rgba(181,135,47,0.10), rgba(10,9,4,0.04));
+}
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.eyebrow::before { content: ''; width: 26px; height: 1px; background: var(--gold-deep); }
+.eyebrow.on-dark { color: var(--gold-bright); }
+.eyebrow.on-dark::before { background: var(--gold-bright); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 16px 32px; border-radius: 3px;
+  font-family: var(--font-display);
+  font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1px solid transparent; cursor: pointer;
+  transition: transform 0.45s var(--ease), background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  white-space: nowrap;
+}
+.btn-primary { background: var(--gold); color: var(--gold-ink); }
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-primary:focus-visible, .btn-outline:focus-visible, .btn-dark:focus-visible, .btn-outline-dark:focus-visible {
+  outline: 2px solid var(--gold-deep); outline-offset: 3px;
+}
+.btn-outline { background: rgba(10,9,4,0.32); backdrop-filter: blur(4px); color: var(--white); border-color: rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+.btn-outline-dark { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-outline-dark:hover { border-color: var(--ink); transform: translateY(-2px); }
+.btn-dark { background: var(--ink); color: var(--paper); }
+.btn-dark:hover { transform: translateY(-2px); }
+.btn-sm { padding: 11px 22px; font-size: 12px; }
+
+/* Every button and the floating CTA get a "liquid metal" treatment — a
+   vanilla CSS/JS take on the shader-driven React component the user asked
+   for (no React/Tailwind/shadcn/WebGL pipeline exists in this stdlib-Python
+   static site, so this reproduces the visual intent directly): a bright
+   metallic arc continuously travels AROUND the button's own outline, plus a
+   click ripple. Two layers do the work — a `::before` conic-gradient ring
+   filling the whole button, and a `::after` inset 2px smaller, painted in
+   the button's own color, sitting on top of the ring and masking out
+   everything but that 2px rim. Both sit behind the label text (z-index
+   -2/-1, versus the text's z-index 1) so the ring never competes with
+   legibility. Keeping the ring inset (rather than overhanging the button's
+   edge) means `overflow: hidden` can stay on, which is what keeps the
+   click-ripple contained to the button's own rounded shape. */
+@property --spin-angle { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+.btn, .floating-cta { position: relative; overflow: hidden; isolation: isolate; --spin-angle: 0deg; }
+.btn-primary, .floating-cta { --btn-fill: var(--gold); }
+.btn-primary:hover, .floating-cta:hover { --btn-fill: var(--gold-bright); }
+.btn-dark { --btn-fill: var(--ink); }
+.btn-dark:hover { --btn-fill: var(--black-deep); }
+.btn-outline { --btn-fill: rgba(10,9,4,0.32); }
+.btn-outline-dark { --btn-fill: var(--paper); }
+
+.btn::before, .floating-cta::before {
+  content: ''; position: absolute; inset: 0; z-index: -2; border-radius: inherit; pointer-events: none;
+  background: conic-gradient(from var(--spin-angle),
+    transparent 0deg, transparent 265deg,
+    var(--gold-deep) 292deg, var(--gold-bright) 312deg, #fff 322deg, var(--gold-bright) 332deg, var(--gold-deep) 352deg,
+    transparent 360deg);
+  animation: btn-spin 2.6s linear infinite;
+  animation-delay: var(--sheen-delay, 0s);
+}
+@keyframes btn-spin { to { --spin-angle: 360deg; } }
+
+.btn::after, .floating-cta::after {
+  content: ''; position: absolute; inset: 2px; z-index: -1; border-radius: inherit; pointer-events: none;
+  background: var(--btn-fill);
+}
+
+.btn > *, .floating-cta > * { position: relative; z-index: 1; }
+.btn-ripple {
+  position: absolute; z-index: 2; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(255,255,255,0.55) 0%, transparent 70%);
+  transform: translate(-50%, -50%) scale(0); opacity: 0.8;
+  animation: btn-ripple 0.6s ease-out forwards;
+}
+@keyframes btn-ripple { to { transform: translate(-50%, -50%) scale(1); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .btn::before, .floating-cta::before { animation: none; }
+  .btn-ripple { display: none; }
+}
+
+/* ---------------------------------- Nav ---------------------------------- */
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--nav-h); display: flex; align-items: center;
+  transition: background 0.4s ease, border-color 0.4s ease, height 0.35s ease, color 0.35s ease, backdrop-filter 0.35s ease;
+  border-bottom: 1px solid transparent; color: var(--white);
+}
+.nav.scrolled {
+  background: rgba(251,249,245,0.92); border-color: var(--line-soft); height: 66px; color: var(--ink);
+  backdrop-filter: blur(10px);
+}
+.nav .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand {
+  font-family: var(--font-display); font-size: 22px; font-weight: 700;
+  display: flex; flex-direction: column; line-height: 1; letter-spacing: 0.01em; text-transform: uppercase;
+  flex-shrink: 0;
+}
+.brand span {
+  font-family: var(--font-body); font-weight: 500;
+  font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-bright);
+  margin-top: 6px;
+}
+.nav.scrolled .brand span { color: var(--gold-deep); }
+.nav-right { display: flex; align-items: center; gap: 26px; }
+.nav-logo {
+  height: 50px; width: auto; border-radius: 6px; background: var(--white);
+  padding: 5px 7px; flex-shrink: 0; transition: height 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 4px 16px rgba(23,20,13,0.14);
+}
+.nav.scrolled .nav-logo { height: 42px; box-shadow: 0 2px 10px rgba(23,20,13,0.1); }
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a:not(.btn) {
+  font-family: var(--font-display); font-size: 13.5px; font-weight: 500; letter-spacing: 0.03em;
+  text-transform: uppercase; color: inherit; position: relative; padding-bottom: 4px;
+}
+.nav-links a:not(.btn)::after {
+  content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px;
+  background: var(--gold-bright); transition: right 0.35s var(--ease);
+}
+.nav.scrolled .nav-links a:not(.btn)::after { background: var(--gold-deep); }
+.nav-links a:not(.btn):hover::after { right: 0; }
+
+.nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; position: relative; z-index: 101; color: inherit; }
+.nav-toggle span { width: 22px; height: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+.nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* The nav sits on bare footage now that the hero isn't darkened, so its text
+   carries its own shadow while it is still transparent (before .scrolled). */
+.nav:not(.scrolled) .brand,
+.nav:not(.scrolled) .nav-links a:not(.btn) { text-shadow: 0 1px 10px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.5); }
+.nav:not(.scrolled) .brand span { color: #f0d79a; }
+
+/* ---------------------------------- Hero ---------------------------------
+   RESET: the hero was stripped back to an empty container on request. No
+   video, text, buttons, overlay, gradient or animation styles live here any
+   more. Rebuild order: 1 video, 2 mobile, 3 headline, 4 CTAs, 5 overlay,
+   6 animations. */
+.hero {
+  position: relative; width: 100%;
+  /* `min-height: 600px` used to sit here and broke small and sideways phones:
+     it forced a 600px hero into a 568px iPhone SE, and into a 320px viewport
+     when any iPhone was turned sideways. The hero is simply one viewport tall. */
+  height: 100vh;    /* fallback for anything without svh */
+  height: 100svh;   /* iOS: the stable small viewport, so the hero does not
+                       resize as the URL bar slides in and out mid-scroll */
+  overflow: hidden; background: var(--black-deep); isolation: isolate;
+}
+
+/* Step 1: the background video. It fills the hero completely on every screen —
+   `cover` crops whatever doesn't fit rather than letterboxing, so there are no
+   bands and nothing to blur. The poster holds the first frame until playback
+   starts, so the hero is never black. No JavaScript controls this video. */
+.hero-video {
+  position: absolute; inset: 0; display: block;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 38% 42%;   /* shifted left from centre */
+  border: 0; background: transparent;
+}
+
+/* The video's own bottom fade. It ends on the same colour the glass band
+   below starts with, so there is no visible seam between them. */
+.hero::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 38%; z-index: 1;
+  background: linear-gradient(to top, rgba(10,9,4,0.92), rgba(10,9,4,0));
+  pointer-events: none;
+}
+
+/* Dark glass band under the video: headline, supporting lines, then the CTAs. */
+.hero-band {
+  position: relative; z-index: 2;
+  background: linear-gradient(to bottom, rgba(10,9,4,0.94) 0%, rgba(10,9,4,0.98) 55%, var(--black-deep) 100%);
+  -webkit-backdrop-filter: blur(20px) saturate(1.15);
+  backdrop-filter: blur(20px) saturate(1.15);
+  color: var(--white); text-align: center;
+  padding: 64px 0 68px;
+}
+.hero-band-title {
+  font-family: var(--font-display); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(26px, 3.4vw, 46px); line-height: 1.12; letter-spacing: 0.01em;
+  color: var(--white); margin: 0 auto;
+}
+.hero-band-title::after {
+  content: ""; display: block; width: 74px; height: 3px; margin: 22px auto 0;
+  background: var(--gold); border-radius: 2px;
+}
+.hero-band-sub {
+  margin: 22px auto 0; max-width: 46ch;
+  font-size: clamp(14.5px, 1.35vw, 17px); line-height: 1.65;
+  color: rgba(255,255,255,0.82);
+}
+.hero-cta {
+  margin-top: 30px;
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+}
+.hero-cta .btn { padding: 15px 30px; font-size: 13.5px; }
+
+@media (max-width: 760px) {
+  .hero-band { padding: 42px 0 46px; }
+  .hero-band-title { font-size: clamp(22px, 6.2vw, 30px); }
+  .hero-band-title::after { width: 54px; height: 2px; margin-top: 16px; }
+  .hero-band-sub { margin-top: 16px; font-size: 14px; }
+  .hero-cta { margin-top: 22px; gap: 10px; }
+  .hero-cta .btn { padding: 13px 22px; font-size: 12.5px; }
+}
+
+.hero-wrap { position: relative; }
+
+/* LAPTOP / TABLET: no glass, no blur. The video runs full height and the
+   headline, lines and buttons sit over it on the left, on the same 1240px
+   gutter as the logo. Phones keep the band as a solid block below the video. */
+@media (min-width: 761px) {
+  .hero-band {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
+    background: none;
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+    text-align: left; padding: 0 0 76px;
+  }
+  .hero-band-title { margin: 0; }
+  .hero-band-title::after { margin-left: 0; margin-right: 0; }
+  .hero-band-sub { margin-left: 0; margin-right: 0; }
+  .hero-cta { justify-content: flex-start; }
+}
+
+/* On phones the band is a real block, so the section after it starts straight
+   away — that doubled padding was the empty gap. */
+@media (max-width: 760px) {
+  .hero-band + .services { padding-top: 26px; }
+  /* The hero's height lands on a fractional pixel (80svh = 675.188 on a 390
+     phone). The boxes touch exactly, but the browser rounds when painting and
+     a hairline of page background bleeds through the join. Overlapping by one
+     pixel removes it. Phones only — on laptops the band is absolutely
+     positioned over the video, so there is no join to bleed. */
+  .hero-band { margin-top: -1px; padding-top: 43px; }
+}
+
+/* Phones, portrait: how much of the frame you see is decided by the hero's
+   HEIGHT, not by the video. A full-height hero on a tall phone is far narrower
+   than the footage, so `cover` crops the sides hard. Trimming the hero brings
+   its shape closer to the clip's and shows noticeably more width — still
+   filled edge to edge, still no bands. */
+@media (max-width: 760px) and (orientation: portrait) {
+  .hero { height: 80vh; height: 80svh; }
+}
+
+/* The visitor is not meant to interact with it: suppress every native control
+   surface WebKit can draw, at all widths. */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-enclosure,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-play-button,
+.hero-video::-webkit-media-controls-overlay-play-button {
+  display: none !important; -webkit-appearance: none; appearance: none;
+}
+
+/* Kept because the SERVICE pages' hero uses these — not homepage hero styling. */
+.hero-actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; justify-content: flex-start; }
+.hero-actions .btn { padding: 13px 26px; font-size: 13px; }
+
+@media (max-width: 760px) {
+  .hero-actions { justify-content: flex-start; margin-top: 18px; }
+  .hero-actions .btn { padding: 13px 24px; font-size: 12.5px; }
+}
+
+@keyframes exploreFill { 0% { top: -100%; } 55% { top: 100%; } 100% { top: 100%; } }
+
+/* Tap-to-play fallback — shown over the hero video only if autoplay gets
+   blocked (some mobile battery-saver / data-saver modes still do this even
+   with muted+playsinline), so the video is always at least playable. */
+.video-play-fallback {
+  position: absolute; z-index: 3; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 68px; height: 68px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(10,9,4,0.45); backdrop-filter: blur(6px); color: var(--white);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  animation: videoPlayIn 0.4s var(--ease);
+}
+.video-play-fallback svg { width: 26px; height: 26px; margin-left: 3px; }
+.video-play-fallback:hover { background: rgba(10,9,4,0.6); }
+@keyframes videoPlayIn { from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+
+/* ------------------------------ Scroll progress ---------------------------- */
+
+.scroll-progress { position: fixed; top: 0; left: 0; right: 0; z-index: 200; height: 2px; background: transparent; pointer-events: none; }
+.scroll-progress::after {
+  content: ''; display: block; height: 100%; width: 100%;
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold-bright));
+  transform: scaleX(var(--progress, 0)); transform-origin: left center;
+}
+
+/* ------------------------------ Reveal utilities -------------------------- */
+
+.reveal { opacity: 0; transform: translateY(44px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.24s; }
+.reveal-delay-3 { transition-delay: 0.36s; }
+
+.reveal-scale { opacity: 0; transform: scale(1.06) translateY(28px); transition: opacity 1.3s var(--ease), transform 1.3s var(--ease); }
+.reveal-scale.in { opacity: 1; transform: scale(1) translateY(0); }
+
+.reveal-wipe { clip-path: inset(0 100% 0 0); opacity: 0; transition: clip-path 1.05s var(--ease), opacity 0.3s ease; }
+.reveal-wipe.in { clip-path: inset(0 0 0 0); opacity: 1; }
+
+.parallax-img { transform: scale(1.12); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-scale, .reveal-wipe { transition: none !important; opacity: 1 !important; transform: none !important; clip-path: none !important; }
+  .parallax-img { transform: none !important; }
+}
+
+/* -------------------------------- Sections -------------------------------- */
+
+section { position: relative; }
+/* So a nav link / #anchor / scrollIntoView never lands a section's heading
+   half-hidden under the fixed nav — this was visibly clipping the map
+   section's "On Gault Avenue" heading on mobile. */
+section[id] { scroll-margin-top: var(--nav-h); }
+.section-pad { padding: 116px 0; }
+.section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 54px; flex-wrap: wrap; }
+.section-head h2 {
+  font-family: var(--font-display); font-size: clamp(30px, 4.4vw, 52px); font-weight: 700;
+  line-height: 1.04; margin-top: 14px; letter-spacing: 0.005em; text-transform: uppercase; color: var(--ink);
+}
+.section-head p { max-width: 380px; color: var(--muted); font-size: 15px; }
+.section-head.on-dark h2 { color: var(--white); }
+.section-head.on-dark p { color: #cfc6ae; }
+
+/* Services — featured, image-forward, first thing after the hero */
+.services { background: var(--paper); }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.service-card {
+  display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line-soft);
+  border-radius: 12px; overflow: hidden; transition: transform 0.4s var(--ease), box-shadow 0.4s ease, border-color 0.3s ease;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px -24px rgba(23,20,13,0.22); border-color: var(--line); }
+.service-card .svc-img { aspect-ratio: 16/10; }
+.service-card .svc-img .grade { width: 100%; height: 100%; }
+.service-card .svc-body { padding: 28px 30px 30px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.service-card .num { font-family: var(--font-display); font-size: 12px; font-weight: 600; color: var(--gold-deep); letter-spacing: 0.1em; }
+.service-card h3 { font-family: var(--font-display); font-size: 23px; font-weight: 600; text-transform: uppercase; color: var(--ink); }
+.service-card p { font-size: 14.5px; color: var(--muted); line-height: 1.65; }
+.service-card .svc-learn {
+  margin-top: auto; padding-top: 10px; display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-display); font-size: 12.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--gold-deep); width: fit-content;
+}
+.service-card .svc-learn svg { width: 14px; height: 14px; transition: transform 0.3s var(--ease); }
+.service-card .svc-learn:hover svg { transform: translateX(4px); }
+
+.services-cta { margin-top: 44px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  padding: 26px 30px; background: var(--panel); border-radius: 12px; border: 1px solid var(--line-soft); }
+.services-cta p { font-size: 15px; color: var(--text); }
+.services-cta p b { color: var(--ink); }
+
+/* Before & After */
+.projects { background: var(--panel); }
+.ba-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.ba-slider {
+  position: relative; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--line-soft); touch-action: pan-y; user-select: none; cursor: ew-resize;
+  --pos: 50%; box-shadow: 0 20px 50px -28px rgba(23,20,13,0.3);
+}
+.ba-slider:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 3px; }
+.ba-layer { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.ba-before { background-color: #e7e0cf; }
+.ba-after { background-color: #efe4c8; clip-path: inset(0 0 0 var(--pos)); }
+.ba-tag {
+  position: absolute; top: 14px; z-index: 3;
+  font: 600 11px/1 var(--font-display); letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 7px 11px; border-radius: 3px; background: rgba(10,9,4,0.72); color: var(--white); backdrop-filter: blur(4px);
+}
+.ba-tag.is-before { left: 14px; }
+.ba-tag.is-after { right: 14px; }
+.ba-empty {
+  position: absolute; inset: 0; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  text-align: center; padding: 24px; color: var(--muted-dim); font-size: 13px;
+}
+.ba-empty .ph { font-family: var(--font-display); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.ba-divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; background: var(--gold-bright); z-index: 4; transform: translateX(-1px); pointer-events: none; }
+.ba-handle {
+  position: absolute; top: 50%; left: var(--pos); z-index: 5;
+  width: 42px; height: 42px; border-radius: 50%; background: var(--gold); border: 2px solid #fff;
+  transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center;
+  color: var(--gold-ink); box-shadow: 0 6px 20px rgba(23,20,13,0.35); pointer-events: none;
+}
+.ba-handle svg { width: 18px; height: 18px; }
+.ba-caption { margin-top: 15px; font-size: 14px; color: var(--muted); }
+.ba-caption b { color: var(--ink); font-weight: 600; }
+.projects-note { margin-top: 26px; font-size: 13px; color: var(--muted-dim); }
+
+/* Recent work — a small photo gallery of finished jobs, distinct from the
+   drag-to-compare before/after sliders above. */
+.recent-work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.recent-work-item {
+  position: relative; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--line-soft); box-shadow: 0 20px 50px -28px rgba(23,20,13,0.3);
+}
+.recent-work-item img {
+  width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);
+}
+.recent-work-item:hover img { transform: scale(1.06); }
+@media (max-width: 900px) {
+  .recent-work-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .recent-work-grid { grid-template-columns: 1fr; }
+}
+
+/* Reviews — auto-scrolling marquee columns. The scroll itself is driven
+   from main.js by elapsed wall-clock time (see the dedicated rAF loop
+   there), not a CSS `animation` — a plain CSS animation can be paused by
+   some browsers' offscreen-element throttling and doesn't reliably resume,
+   which read as "the marquee stops when you scroll back up." Driving it by
+   time instead of relying on the animation's own lifecycle keeps it moving
+   continuously regardless of scroll direction or whether the page is
+   scrolling at all. */
+.reviews { background: var(--paper); }
+.reviews-marquee {
+  display: flex; justify-content: center; gap: 22px; margin-top: 10px;
+  max-height: 640px; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+}
+.reviews-col { flex: 1 1 0; max-width: 380px; }
+.reviews-col ul { list-style: none; display: flex; flex-direction: column; gap: 20px; padding-bottom: 20px; will-change: transform; }
+.review-card {
+  padding: 28px 26px; border-radius: 16px; border: 1px solid var(--line-soft); background: var(--white);
+  box-shadow: 0 14px 34px -22px rgba(23,20,13,0.2);
+}
+.review-card blockquote { font-size: 14.5px; line-height: 1.72; color: var(--text); }
+.review-footer { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.review-avatar {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--gold); color: var(--gold-ink);
+  display: flex; align-items: center; justify-content: center; font-family: var(--font-display);
+  font-weight: 700; font-size: 14px; flex-shrink: 0;
+}
+.review-who { display: flex; flex-direction: column; }
+.review-name { font-weight: 600; font-size: 14px; color: var(--ink); }
+.review-src { font-size: 12px; color: var(--muted-dim); margin-top: 1px; }
+.google-badge {
+  display: inline-flex; align-items: center; gap: 9px; margin-top: 14px;
+  font-family: var(--font-display); font-size: 13px; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink);
+}
+.google-badge .google-g { width: 20px; height: 20px; flex-shrink: 0; display: block; }
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee { max-height: none; -webkit-mask-image: none; mask-image: none; }
+}
+
+/* The Fort Payne edge */
+.edge { background: var(--panel); }
+.edge-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.edge-card { border: 1px solid var(--line-soft); border-radius: 10px; padding: 34px 30px; background: var(--white); }
+.edge-card .wk { font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-deep); }
+.edge-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; text-transform: uppercase; margin: 12px 0 10px; color: var(--ink); }
+.edge-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+/* About / who we are (near the bottom) */
+.about { background: var(--paper); }
+.about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 76px; align-items: center; }
+.about-image { aspect-ratio: 4 / 5; border-radius: 10px; }
+.about-body p { font-size: clamp(17px, 1.9vw, 21px); line-height: 1.65; color: var(--text); margin-bottom: 20px; }
+.about-body p.lead {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(23px, 2.6vw, 30px);
+  text-transform: none; letter-spacing: 0; line-height: 1.2; color: var(--ink);
+}
+.about-body .fine { font-size: 15px; color: var(--muted); line-height: 1.75; }
+
+/* Quote CTA band */
+.quote-band { background: var(--gold); color: var(--gold-ink); padding: 108px 0; position: relative; overflow: hidden; }
+.quote-band::before {
+  content: ''; position: absolute; top: 50%; left: 15%; width: 620px; height: 620px;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 70%);
+  transform: translate(-50%, -50%); pointer-events: none;
+}
+.quote-band-inner { position: relative; z-index: 1; text-align: center; }
+.quote-band .eyebrow { color: var(--gold-ink); justify-content: center; opacity: 0.75; }
+.quote-band .eyebrow::before { background: var(--gold-ink); opacity: 0.5; }
+.quote-band h2 { font-family: var(--font-display); font-size: clamp(32px, 5.4vw, 58px); font-weight: 700; text-transform: uppercase; margin: 16px auto 20px; max-width: 18ch; line-height: 1.04; color: var(--gold-ink); }
+.quote-band p { color: #3a2f14; font-size: 16px; max-width: 470px; margin: 0 auto 32px; }
+.quote-band .band-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.quote-band-sm { padding: 64px 0; }
+.quote-band-sm h2 { font-size: clamp(24px, 3.6vw, 34px); margin: 10px auto 18px; }
+
+/* Contact */
+.contact { background: var(--panel); border-top: 1px solid var(--line-soft); }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 640px; margin: 0 auto; }
+.contact h2 { font-family: var(--font-display); font-size: clamp(28px, 3.6vw, 42px); font-weight: 700; text-transform: uppercase; line-height: 1.08; margin-bottom: 24px; color: var(--ink); }
+.info-row { display: flex; gap: 20px; padding: 18px 0; border-top: 1px solid var(--line-soft); }
+.info-row:last-of-type { border-bottom: 1px solid var(--line-soft); }
+.info-row .label { width: 130px; flex-shrink: 0; font-family: var(--font-display); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.info-row .value { font-size: 15px; color: var(--text); line-height: 1.7; min-width: 0; overflow-wrap: anywhere; }
+.info-row .value a:hover { color: var(--gold-deep); }
+.info-row .value.placeholder { color: var(--muted-dim); font-style: italic; }
+
+/* Map */
+.map { background: var(--paper); padding-top: 116px; padding-bottom: 124px; }
+.map-frame { position: relative; width: 100%; aspect-ratio: 16 / 7; min-height: 320px; border: 1px solid var(--line-soft); border-radius: 10px; overflow: hidden; background: var(--panel); }
+.map-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Hidden until MapLibre actually initializes (see map.js) — .is-fallback
+   permanently covers this with the static card instead, e.g. in the
+   single-file Artifact demo, where the map tiles can't be fetched at all. */
+.map-frame.is-fallback .map-canvas { display: none; }
+.map-fallback { display: none; }
+
+/* Custom marker + popup for the interactive map, styled to match the site
+   instead of MapLibre's plain default pin/popup. */
+.map-marker-pin {
+  width: 30px; height: 30px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg);
+  background: var(--gold); border: 2px solid var(--white); box-shadow: 0 4px 14px rgba(23,20,13,0.4);
+  cursor: pointer;
+}
+.maplibregl-popup-content {
+  background: var(--ink); color: var(--white); border-radius: 8px; padding: 12px 16px;
+  font-family: var(--font-body); font-size: 13px; line-height: 1.6; box-shadow: 0 12px 30px rgba(23,20,13,0.3);
+}
+.maplibregl-popup-content strong { font-family: var(--font-display); font-size: 13px; letter-spacing: 0.02em; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--ink); }
+.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--ink); }
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.map-frame.is-fallback .map-fallback { position: absolute; inset: 0; display: block; }
+.map-fallback-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.map-fallback-card {
+  position: absolute; left: 20px; bottom: 20px; z-index: 2;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--white); border-radius: 10px; padding: 16px 20px;
+  box-shadow: 0 14px 34px -14px rgba(23,20,13,0.4);
+}
+.map-fallback .addr { font-size: 14px; color: var(--text); line-height: 1.5; }
+
+/* Footer — kept dark for grounding against the light page */
+footer { background: var(--black-deep); color: #b4ab97; padding: 70px 0 30px; }
+.footer-top { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding-bottom: 46px; border-bottom: 1px solid var(--line-onDark); }
+.footer-top .brand { color: var(--white); }
+.footer-cols { display: flex; gap: 72px; flex-wrap: wrap; }
+.footer-col h4 { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #7a705c; margin-bottom: 16px; }
+.footer-col a, .footer-col p { display: block; font-size: 14px; color: #d7cfba; margin-bottom: 10px; }
+.footer-col a:hover { color: var(--gold-bright); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 26px; font-size: 12px; color: #6e654f; flex-wrap: wrap; gap: 12px; }
+.footer-bottom .flag { font-style: italic; }
+
+/* Floating quote CTA — always within reach. Sits stacked above the chat
+   widget's FAB (below), both anchored to the same bottom-right corner. */
+.floating-cta {
+  /* Bottom-most of the two fixed corner widgets — the chat bubble sits
+     above it (see .chatbot below), per explicit request. */
+  position: fixed; right: 22px; bottom: 22px; z-index: 150;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--gold); color: var(--gold-ink); padding: 15px 22px; border-radius: 999px;
+  font-family: var(--font-display); font-size: 13px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  box-shadow: 0 14px 34px -12px rgba(23,20,13,0.45);
+  opacity: 0; transform: translateY(16px) scale(0.94); pointer-events: none;
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease), background 0.3s ease, bottom 0.3s ease;
+}
+.floating-cta.is-visible { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+.floating-cta:hover { background: var(--gold-bright); }
+.floating-cta svg { width: 16px; height: 16px; }
+@media (prefers-reduced-motion: reduce) { .floating-cta { transition: opacity 0.2s ease; } }
+
+/* ------------------------------- AI chat widget ------------------------------- */
+/* Present on every page, bottom-right. A client-side FAQ assistant — no
+   external API — so it can answer roofing/business questions instantly and
+   for free, with no key or backend to manage. See main.js for the Q&A data
+   and matching logic. */
+/* Bottom-right corner — the floating "Get a Free Quote" pill that used to
+   sit below it has been removed, so the chat widget takes that spot. */
+.chatbot { position: fixed; right: 22px; bottom: 22px; z-index: 160; }
+.chatbot-toggle {
+  width: 60px; height: 60px; border-radius: 50%; border: none; cursor: pointer;
+  background: var(--ink); color: var(--gold-bright);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 14px 34px -12px rgba(23,20,13,0.55);
+  transition: transform 0.35s var(--ease), background 0.3s ease;
+}
+.chatbot-toggle:hover { transform: translateY(-2px); background: var(--black-deep); }
+.chatbot-toggle svg { width: 26px; height: 26px; transition: opacity 0.2s ease, transform 0.3s var(--ease); }
+.chatbot-toggle .icon-close { position: absolute; opacity: 0; transform: rotate(-45deg) scale(0.6); }
+.chatbot-toggle .icon-chat { opacity: 1; transform: rotate(0) scale(1); }
+.chatbot.is-open .chatbot-toggle .icon-chat { opacity: 0; transform: rotate(45deg) scale(0.6); }
+.chatbot.is-open .chatbot-toggle .icon-close { opacity: 1; transform: rotate(0) scale(1); }
+.chatbot-dot {
+  position: absolute; top: 2px; right: 2px; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold); border: 2px solid var(--paper); animation: chatDotPulse 2.4s ease-in-out infinite;
+}
+.chatbot.is-open .chatbot-dot, .chatbot.is-engaged .chatbot-dot { display: none; }
+@keyframes chatDotPulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.25); opacity: 0.75; } }
+
+.chatbot-panel {
+  position: absolute; right: 0; bottom: 74px; width: 360px; max-width: calc(100vw - 32px);
+  height: 500px; max-height: calc(100vh - 140px);
+  background: var(--white); border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--line-soft); box-shadow: 0 30px 70px -20px rgba(23,20,13,0.4);
+  display: flex; flex-direction: column;
+  opacity: 0; transform: translateY(16px) scale(0.97); pointer-events: none; transform-origin: bottom right;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.chatbot.is-open .chatbot-panel {
+  opacity: 1; pointer-events: auto;
+  transform: none;          /* not `scale(1)` — any transform keeps the panel on a
+                               composited layer and resamples the text */
+}
+.chatbot-header {
+  background: var(--ink); color: var(--white); padding: 16px 18px; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+}
+.chatbot-header-avatar {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: var(--gold-ink);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.chatbot-header-avatar svg { width: 18px; height: 18px; }
+.chatbot-header-text { flex: 1; min-width: 0; }
+.chatbot-header-text strong { display: block; font-family: var(--font-display); font-size: 14px; letter-spacing: 0.02em; text-transform: uppercase; }
+.chatbot-header-text span { display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: #cfc6ae; margin-top: 2px; }
+.chatbot-header-text span::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #6fbf6f; flex-shrink: 0; }
+.chatbot-close {
+  background: none; border: none; color: #cfc6ae; cursor: pointer; font-size: 22px; line-height: 1; padding: 4px 6px; flex-shrink: 0;
+}
+.chatbot-close:hover { color: var(--white); }
+
+.chatbot-messages { flex: 1; overflow-y: auto; padding: 16px 16px 6px; display: flex; flex-direction: column; gap: 12px; background: var(--paper); }
+.chat-msg { max-width: 84%; padding: 11px 14px; border-radius: 14px; font-size: 13.5px; line-height: 1.55; }
+.chat-msg.bot { align-self: flex-start; background: var(--white); border: 1px solid var(--line-soft); color: var(--text); border-bottom-left-radius: 4px; }
+.chat-msg.user { align-self: flex-end; background: var(--gold); color: var(--gold-ink); border-bottom-right-radius: 4px; font-weight: 500; }
+.chat-msg.bot .chat-cta {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding: 8px 14px;
+  background: var(--ink); color: var(--white); border-radius: 999px; font-family: var(--font-display);
+  font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+}
+.chat-msg.bot .chat-cta:hover { background: var(--black-deep); }
+.chat-typing { align-self: flex-start; display: flex; gap: 4px; padding: 13px 16px; background: var(--white); border: 1px solid var(--line-soft); border-radius: 14px; border-bottom-left-radius: 4px; }
+.chat-typing span { width: 6px; height: 6px; border-radius: 50%; background: var(--muted-dim); animation: chatTyping 1.1s ease-in-out infinite; }
+.chat-typing span:nth-child(2) { animation-delay: 0.15s; }
+.chat-typing span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes chatTyping { 0%, 60%, 100% { transform: translateY(0); opacity: 0.5; } 30% { transform: translateY(-4px); opacity: 1; } }
+
+.chatbot-suggestions { display: flex; gap: 8px; overflow-x: auto; padding: 10px 16px; flex-shrink: 0; background: var(--paper); touch-action: pan-x; }
+.chatbot-suggestions::-webkit-scrollbar { display: none; }
+.chip {
+  flex-shrink: 0; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--white); font-size: 12px; color: var(--text); cursor: pointer; white-space: nowrap;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.chip:hover { border-color: var(--gold-deep); background: var(--panel); }
+
+.chatbot-form { display: flex; gap: 8px; padding: 12px; border-top: 1px solid var(--line-soft); background: var(--white); flex-shrink: 0; }
+.chatbot-form input {
+  flex: 1; border: 1px solid var(--line); border-radius: 999px; padding: 11px 16px; font-size: 13.5px;
+  font-family: inherit; color: var(--text); background: var(--paper);
+}
+.chatbot-form input:focus { outline: none; border-color: var(--gold); }
+.chatbot-form button {
+  width: 40px; height: 40px; border-radius: 50%; border: none; background: var(--gold); color: var(--gold-ink);
+  display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; transition: background 0.2s ease;
+}
+.chatbot-form button:hover { background: var(--gold-bright); }
+.chatbot-form button svg { width: 17px; height: 17px; }
+
+
+.svc-intro { padding: 90px 0 20px; }
+.svc-intro p { font-size: clamp(18px, 2vw, 22px); line-height: 1.7; color: var(--text); max-width: 74ch; }
+
+.svc-steps { padding: 70px 0; }
+.svc-steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.svc-step { padding: 30px 26px; border-radius: 10px; border: 1px solid var(--line-soft); background: var(--white); }
+.svc-step .stepnum { font-family: var(--font-accent); font-style: italic; font-size: 30px; color: var(--gold-deep); }
+.svc-step h3 { font-family: var(--font-display); font-size: 17px; font-weight: 600; text-transform: uppercase; margin-top: 10px; color: var(--ink); }
+.svc-step p { font-size: 13.5px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+
+.svc-included { padding: 20px 0 90px; }
+.svc-included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 40px; max-width: 900px; }
+.svc-included-grid li { display: flex; gap: 12px; font-size: 15px; color: var(--text); line-height: 1.6; list-style: none; }
+.svc-included-grid svg { width: 18px; height: 18px; color: var(--gold-deep); flex-shrink: 0; margin-top: 2px; }
+
+/* ------------------------------- Responsive ------------------------------ */
+
+@media (max-width: 900px) {
+  .container { padding: 0 22px; }
+  .nav-right { gap: 14px; }
+  .nav-links {
+    position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 340px);
+    background: var(--paper); color: var(--ink);
+    flex-direction: column; align-items: flex-start; justify-content: center; gap: 26px;
+    padding: 40px; transform: translateX(100%); transition: transform 0.45s var(--ease);
+    border-left: 1px solid var(--line);
+    box-shadow: -20px 0 50px -20px rgba(23,20,13,0.25);
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-links a:not(.btn)::after { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-links a.btn { margin-top: 10px; }
+  .nav-logo { height: 40px; }
+  .nav.scrolled .nav-logo { height: 36px; }
+  .brand { font-size: 18px; min-width: 0; }
+  /* The tagline gained "· Since 2021"; at the desktop size it overflows a
+     phone nav and shoves the logo off the right edge. */
+  .brand span { font-size: 8.5px; letter-spacing: 0.08em; }
+
+  .section-pad { padding: 78px 0; }
+  .map { padding-top: 78px; padding-bottom: 86px; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .services-grid, .ba-grid, .edge-grid { grid-template-columns: 1fr; }
+  .svc-steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .svc-included-grid { grid-template-columns: 1fr; }
+  .reviews-marquee { flex-direction: column; align-items: center; max-height: none; gap: 18px;
+    -webkit-mask-image: none; mask-image: none; }
+  /* base rule is `flex: 1 1 0`; with the marquee switched to a column that
+     zero basis applies to HEIGHT and collapses the list to nothing. */
+  .reviews-col { flex: 0 0 auto; width: 100%; max-width: 460px; max-height: 420px; overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 14%, black 86%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 14%, black 86%, transparent); }
+
+  .floating-cta { right: 16px; bottom: 16px; padding: 13px 18px; font-size: 12px; }
+  .floating-cta span.long { display: none; }
+  .chatbot { right: 16px; bottom: 16px; }
+  .chatbot-toggle { width: 54px; height: 54px; }
+  .chatbot-panel { width: calc(100vw - 24px); height: min(70vh, 560px); bottom: 66px; right: -6px; }
+}
+
+/* Narrow phones (iPhone SE/mini, most Androids): the brand block had
+   flex-shrink:0 and, with "· Since 2021" in the tagline, pushed the logo and
+   menu button past the right edge. Let it shrink and tighten the row.
+   Kept at the end of the file so it wins over the 900px block. */
+@media (max-width: 385px) {
+  .nav .container { gap: 10px; }
+  .brand { flex-shrink: 1; min-width: 0; font-size: 17px; }
+  .brand span { font-size: 7.5px; letter-spacing: 0.04em; }
+  .nav-right { gap: 8px; }
+  .nav-toggle { padding: 8px 2px 8px 4px; }
+}
+@media (max-width: 340px) {
+  .brand { font-size: 15px; }
+  .brand span { font-size: 6.5px; letter-spacing: 0.02em; }
+}
+
+/* Phones: a 130px label column leaves too little room for the address and
+   email beside it. */
+@media (max-width: 480px) {
+  .info-row { gap: 14px; }
+  .info-row .label { width: 78px; }
+  /* Taller map and a compact address card, so the card sits below the pin
+     instead of covering it. */
+  .map-frame { min-height: 400px; }
+  .map-fallback-card { left: 12px; right: 12px; bottom: 12px; padding: 12px 14px; gap: 10px; }
+  .map-fallback-card .btn { padding: 10px 16px; font-size: 11px; }
+}
+
+
+/* Legal pages (privacy policy) — prose on the standard paper ground, using
+   the same display/body pairing as the rest of the site. */
+.legal { background: var(--paper); padding-top: 132px; }
+.legal .container { max-width: 820px; }
+.legal h1 {
+  font-family: var(--font-display); font-size: clamp(34px, 5.2vw, 56px); font-weight: 700;
+  line-height: 1.04; text-transform: uppercase; letter-spacing: 0.005em; color: var(--ink);
+  margin-top: 14px;
+}
+.legal h2 {
+  font-family: var(--font-display); font-size: clamp(19px, 2.2vw, 23px); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink);
+  margin-top: 46px; padding-top: 26px; border-top: 1px solid var(--line-soft);
+}
+.legal p { color: var(--text); font-size: 16px; line-height: 1.78; margin-top: 14px; }
+.legal .legal-lead { font-size: 18px; line-height: 1.7; color: var(--muted); margin-top: 26px; }
+.legal ul { margin: 16px 0 0 0; padding-left: 0; list-style: none; }
+.legal ul li {
+  position: relative; padding-left: 22px; margin-top: 9px;
+  color: var(--text); font-size: 16px; line-height: 1.7;
+}
+.legal ul li::before {
+  content: ""; position: absolute; left: 4px; top: 11px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+}
+.legal a { color: var(--gold-deep); text-decoration: underline; text-underline-offset: 2px; }
+.legal a:hover { color: var(--gold); }
+.legal-contact {
+  margin-top: 18px; padding: 24px 26px; border: 1px solid var(--line-soft);
+  border-radius: 16px; background: var(--white);
+}
+.legal-contact p { margin-top: 6px; }
+.legal-contact .legal-contact-name { font-weight: 700; color: var(--ink); margin-top: 0; }
+
+/* Consent line under a form's submit button. .submit-row is a centred flex
+   row, so the text needs a full-width basis or it sits beside the button. */
+.submit-row { flex-wrap: wrap; }
+.form-consent {
+  flex: 0 0 100%; margin: 16px auto 0; max-width: 620px; text-align: center;
+  font-size: 12.5px; line-height: 1.62; color: var(--muted-dim);
+}
+.form-consent a { color: var(--gold-deep); text-decoration: underline; text-underline-offset: 2px; }
+.form-consent a:hover { color: var(--gold); }
+
+@media (max-width: 760px) {
+  .legal { padding-top: 104px; }
+  .legal h2 { margin-top: 36px; padding-top: 22px; }
+  .legal-contact { padding: 20px 18px; }
+}
+
+
+/* CHAT LEGIBILITY — bigger type on phones, and an input at 16px so iOS does
+   not zoom the whole page when it gets focus. */
+.chat-msg { -webkit-font-smoothing: antialiased; }
+.chatbot-suggestions { flex-wrap: wrap; overflow-x: visible; gap: 7px; }
+.chip.chip-go {
+  border-color: var(--gold-deep); background: var(--gold); color: var(--gold-ink); font-weight: 600;
+}
+.chip.chip-go:hover { background: var(--gold-bright); border-color: var(--gold-deep); }
+@media (max-width: 760px) {
+  .chat-msg { font-size: 14.5px; line-height: 1.5; max-width: 88%; }
+  .chip { font-size: 13px; padding: 9px 14px; }
+  .chatbot-form input { font-size: 16px; }
+  .chatbot-panel { height: min(74vh, 580px); }
+}
+
+
+/* SERVICE PAGE HERO — this block had almost no styling of its own, so the
+   headline fell back to a browser-default h1 inheriting the body's 1.6
+   line-height, and `.eyebrow` (display:inline-flex) sat on the same line as
+   the back link. Everything below is scoped to .svc-* so no other page moves. */
+.svc-hero-content { padding-block: 46px 54px; max-width: 760px; }  /* padding-block: keep .container's side gutters */
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-display); font-size: 12.5px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); transition: color 0.2s ease;
+}
+.back-link:hover { color: var(--gold-deep); }
+
+/* the eyebrow is inline-flex by default; force its own row under the back link */
+.svc-hero-content .eyebrow { display: flex; margin-top: 22px; }
+
+.svc-hero-content h1 {
+  font-size: clamp(30px, 5.4vw, 50px);
+  line-height: 1.1;                 /* was the inherited 1.6 — far too loose for display type */
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  margin-top: 14px;
+  text-wrap: balance;
+}
+.svc-hero-content > p:not(.eyebrow) {
+  margin-top: 18px; max-width: 54ch;
+  font-size: clamp(16px, 1.5vw, 18.5px); line-height: 1.65; color: var(--muted);
+}
+
+/* The 90px top / 20px bottom left a dead gap under the buttons and almost
+   nothing before the next section. */
+.svc-intro { padding: 64px 0 56px; }
+
+@media (max-width: 760px) {
+  /* SERVICE PAGE, MOBILE RHYTHM (2026-10-05 refinement)
+     hero image -> 48 -> All Services -> 36 -> eyebrow -> 18 -> h1 -> 26 ->
+     description -> ~62 (with a short gold rule) -> body copy. */
+
+  /* The photo used to run at its natural 3:2 height and start under the
+     fixed 66px nav. Start it below the nav and cap it so the headline is
+     visible on the first screen. */
+  .svc-hero .grade { margin-top: 66px; height: clamp(190px, 30svh, 250px); }
+
+  /* a touch more side room than the site-wide 22px, on service sections only */
+  .svc-hero-content, .svc-intro .container, .svc-steps .container,
+  .svc-included .container, .quote-band-sm .container { padding-inline: 26px; }
+
+  .svc-hero-content { padding-block: 48px 30px; max-width: none; }
+  .back-link { padding-block: 4px; }
+  .svc-hero-content .eyebrow { margin-top: 36px; }
+  .svc-hero-content h1 {
+    margin-top: 18px;
+    font-size: clamp(26px, 7.2vw, 30px);
+    line-height: 1.18;
+  }
+  .svc-hero-content > p:not(.eyebrow) {
+    margin-top: 26px; max-width: none;
+    font-size: 16.5px; line-height: 1.75;
+  }
+
+  /* the break before the body paragraph: space plus one short gold hairline */
+  .svc-intro { padding: 0 0 44px; }
+  .svc-intro .container::before {
+    content: ''; display: block; width: 44px; height: 1px;
+    background: var(--gold-deep); margin-bottom: 30px;
+  }
+  .svc-intro p { font-size: 16.5px; line-height: 1.75; }
+  .svc-steps { padding: 52px 0; }
+  .svc-included { padding: 16px 0 64px; }
+
+  /* the copyright line sits at the very bottom; keep it clear of the chat button */
+  :is(body, .view):has(> .svc-hero) footer { padding-bottom: 84px; }
+}
+
+/* Chat button steps aside while reading. On service pages it slides away on
+   scroll-down and returns on scroll-up (toggled in main.js / runtime.js), so
+   it never sits on top of the copy. */
+.chatbot { transition: transform 0.35s var(--ease), opacity 0.3s ease; }
+.chatbot.is-tucked { transform: translateY(calc(100% + 28px)); opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .chatbot { transition: opacity 0.2s ease; } }
+
+/* Chat suggestions stack VERTICALLY (2026-10-08): one tappable row per
+   question, full width, left-aligned. Capped at about half the panel and
+   scrolls on its own so the conversation above never gets squeezed out. */
+.chatbot-suggestions {
+  flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 7px;
+  overflow-x: hidden; overflow-y: auto; max-height: 46%; touch-action: pan-y;
+  padding: 10px 14px 12px;
+}
+.chatbot-suggestions .chip {
+  width: 100%; text-align: left; white-space: normal; line-height: 1.35;
+  border-radius: 12px; padding: 10px 14px; flex-shrink: 0;
+}
+.chatbot-suggestions:empty { display: none; }
+@media (max-width: 760px) {
+  .chatbot-suggestions { gap: 6px; padding: 8px 12px 10px; }
+  .chatbot-suggestions .chip { padding: 8px 13px; }
+}
+
+/* ============================================================
+   Quote request page — light theme
+   ============================================================ */
+
+.quote-page { min-height: 100vh; background: var(--paper); padding-top: calc(var(--nav-h) + 52px); padding-bottom: 100px; }
+
+.quote-head { text-align: center; margin-bottom: 40px; }
+.quote-head h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 50px); font-weight: 700; text-transform: uppercase; margin-top: 14px; color: var(--ink); }
+.quote-head p { color: var(--muted); margin-top: 14px; max-width: 480px; margin-left: auto; margin-right: auto; }
+.quote-head .quoting-tag {
+  display: inline-block; margin-top: 16px; font-family: var(--font-display); font-size: 12px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--gold-ink); background: var(--gold); padding: 8px 16px; border-radius: 999px;
+}
+/* `hidden` loses to a class rule that sets display, so the empty tag was
+   rendering as a blank gold pill on every visit. Restore it explicitly. */
+.quote-head .quoting-tag[hidden] { display: none; }
+
+.quote-wrap { max-width: 620px; margin: 0 auto; padding: 0 24px; }
+.quote-panel { display: none; animation: panelIn 0.5s var(--ease); }
+.quote-panel.active { display: block; }
+@keyframes panelIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+.form-section { margin-bottom: 30px; }
+.form-section h2 {
+  font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold-deep); margin-bottom: 18px;
+}
+.form-grid { display: flex; flex-direction: column; gap: 18px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-field label { display: block; font-family: var(--font-display); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 9px; }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  color: var(--text); font-size: 15px; font-family: inherit; transition: border-color 0.3s ease, background 0.3s ease;
+}
+.form-field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23746a56' stroke-width='1.6' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+.form-field textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(181,135,47,0.12); }
+.form-field input::placeholder, .form-field textarea::placeholder { color: var(--muted-dim); }
+.form-field select option { background: var(--white); color: var(--text); }
+
+/* Preferred-date calendar picker */
+.date-picker { position: relative; }
+.date-picker-trigger {
+  width: 100%; display: flex; align-items: center; gap: 10px; text-align: left;
+  background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  color: var(--text); font-size: 15px; font-family: inherit; cursor: pointer; transition: border-color 0.3s ease;
+}
+.date-picker-trigger svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--gold-deep); }
+.date-picker-trigger span { color: var(--muted-dim); }
+.date-picker-trigger.has-value span { color: var(--text); }
+.date-picker-trigger:hover, .date-picker-trigger:focus-visible { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(181,135,47,0.12); }
+.date-picker-panel {
+  position: absolute; z-index: 20; top: calc(100% + 8px); left: 0; width: 300px; max-width: calc(100vw - 48px);
+  background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 16px;
+  box-shadow: 0 18px 40px rgba(20,18,12,0.16); animation: datePanelIn 0.18s var(--ease);
+  max-height: min(480px, calc(100vh - 120px)); overflow-y: auto;
+}
+@keyframes datePanelIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+.date-picker-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.date-picker-month { font-family: var(--font-display); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); }
+.date-picker-nav {
+  width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper);
+  color: var(--ink); font-size: 18px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.date-picker-nav:hover:not(:disabled) { background: var(--panel); border-color: var(--gold); }
+.date-picker-nav:disabled { opacity: 0.35; cursor: not-allowed; }
+.date-picker-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 4px; }
+.date-picker-weekdays span { text-align: center; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted-dim); text-transform: uppercase; }
+.date-picker-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.date-picker-day {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border: none; background: transparent;
+  border-radius: 50%; font-size: 13px; color: var(--text); cursor: pointer; transition: background 0.15s ease, color 0.15s ease;
+}
+.date-picker-day:hover:not(:disabled) { background: var(--panel); }
+.date-picker-day:disabled { color: var(--muted-dim); opacity: 0.4; cursor: not-allowed; }
+.date-picker-day.is-today { font-weight: 700; color: var(--gold-deep); }
+.date-picker-day.is-selected { background: var(--gold); color: var(--gold-ink); font-weight: 700; }
+.date-picker-day.is-selected:hover { background: var(--gold-bright); }
+.date-picker-day.is-empty { visibility: hidden; cursor: default; }
+
+.date-picker-times { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.date-picker-times-label { font-family: var(--font-display); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.date-picker-times-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.date-picker-time-btn {
+  border: 1px solid var(--line); background: var(--paper); border-radius: 8px; padding: 9px 8px;
+  font-size: 13px; color: var(--text); cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.date-picker-time-btn:hover { border-color: var(--gold); background: var(--panel); }
+.date-picker-time-btn.is-selected { background: var(--gold); border-color: var(--gold); color: var(--gold-ink); font-weight: 700; }
+
+.form-error { color: #a5401f; font-size: 13px; margin-top: 10px; min-height: 18px; }
+.submit-row { margin-top: 6px; display: flex; justify-content: center; }
+.submit-row .btn { min-width: 240px; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:disabled:hover { transform: none; }
+
+/* Confirmation */
+.confirm-panel { text-align: center; padding: 28px 0; }
+.confirm-icon { width: 74px; height: 74px; border-radius: 50%; background: var(--gold); color: var(--gold-ink); display: flex; align-items: center; justify-content: center; margin: 0 auto 26px; font-size: 32px; }
+.confirm-panel h2 { font-family: var(--font-display); font-size: clamp(26px, 4vw, 38px); font-weight: 700; text-transform: uppercase; color: var(--ink); }
+.confirm-panel > p { color: var(--muted); margin-top: 12px; }
+.confirm-ref { display: inline-block; margin-top: 18px; font-family: var(--font-display); font-size: 14px; letter-spacing: 0.08em; color: var(--gold-deep); background: var(--panel); padding: 10px 20px; border-radius: 999px; }
+.confirm-summary { text-align: left; max-width: 440px; margin: 34px auto 0; background: var(--panel); border: 1px solid var(--line-soft); border-radius: 12px; padding: 22px; }
+.confirm-summary .summary-row { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line-soft); font-size: 14px; }
+.confirm-summary .summary-row:last-child { border-bottom: none; }
+.confirm-summary .k { color: var(--muted); flex-shrink: 0; }
+.confirm-summary .v { color: var(--ink); font-weight: 600; text-align: right; }
+
+@media (max-width: 700px) {
+  .form-row { grid-template-columns: 1fr; }
+  .quote-page { padding-top: calc(var(--nav-h) + 26px); }
+}
+
+/* Optional description box (2026-10-08): short by default so the form still
+   reads as quick; the "(optional)" tag stays lowercase and quiet. */
+.form-field label .optional { text-transform: none; letter-spacing: 0; color: var(--muted-dim); font-family: var(--font-body); font-size: 12px; }
+#quote-form textarea#message { min-height: 96px; }
+.confirm-summary .summary-row[hidden] { display: none; }
+.confirm-summary #confirm-message { white-space: pre-line; overflow-wrap: anywhere; }
+@media (max-width: 700px) { #quote-form textarea#message { min-height: 110px; font-size: 16px; } }
+.confirm-summary .summary-row:has(+ .summary-row[hidden]) { border-bottom: none; }
+
+.view { display: none; }
+.view.active { display: block; }
+html:not(.js) .reveal, html:not(.js) .reveal-scale, html:not(.js) .reveal-wipe, html.no-reveal .reveal, html.no-reveal .reveal-scale, html.no-reveal .reveal-wipe { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<div class="view active" id="view-home">
+<nav class="nav">
+  <div class="container">
+    <a href="#top" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#projects">Before &amp; After</a>
+        <a href="#edge">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Wrapper exists so the band can be laid OVER the video on laptops
+     while staying a normal block below it on phones. -->
+<div class="hero-wrap">
+<header class="hero" id="top">
+  <!-- Step 1 of 6: background video. Next: 2 mobile, 3 headline,
+       4 CTA buttons, 5 overlay, 6 animations. -->
+  <video id="hero-video" class="hero-video"
+         src="/fort-payneroofing-clone/video/commercial-hero-mobile.mp4" poster="/fort-payneroofing-clone/images/hero-mobile-still.jpg"
+         autoplay muted loop playsinline preload="metadata"></video>
+  <!-- Runs as the tag is parsed, before loading starts, so a phone never
+       fetches the 16:9 file and a laptop never fetches the 9:16 one. It only
+       chooses the file: nothing here plays, pauses or reloads the video. -->
+  <script data-keep>(function () { var v = document.getElementById('hero-video');
+    if (!v) return;
+    // Portrait AND narrow gets the 9:16 cut. Width alone was wrong: a phone
+    // turned sideways is 568-932px wide and was being handed the vertical
+    // clip, which `cover` then crushed into a thin horizontal slice.
+    if (!window.matchMedia('(max-width: 760px) and (orientation: portrait)').matches) {
+      v.src = '/video/commercial-hero.mp4';
+      v.poster = '/fort-payneroofing-clone/images/hero-wide-still.jpg';
+    }
+    // ONE attempt, once, and only if the browser hasn't already started it.
+    // Deliberately not a retry loop and not tied to any tap — duelling retry
+    // loops are what stopped the video playing at all before.
+    v.addEventListener('canplay', function once() {
+      v.removeEventListener('canplay', once);
+      if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    });
+  })();</script>
+
+</header>
+
+<!-- Dark glass band directly beneath the video. The video itself is untouched;
+     this sits below it and picks up where the hero's bottom fade ends, so the
+     two read as one continuous surface. -->
+<section class="hero-band">
+  <div class="container">
+    <h2 class="hero-band-title">Roofing done right.<br />Built to last.</h2>
+    <p class="hero-band-sub">
+      Residential &amp; commercial roofing you can count on.<br />
+      Serving Fort Payne and surrounding areas.
+    </p>
+    <div class="hero-cta">
+      <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Request a Quote</a>
+      <a href="tel:+12566305125" class="btn btn-outline">(256) 630-5125</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="services section-pad" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">What we do</p>
+        <h2 class="reveal-wipe">Roofing services</h2>
+      </div>
+      <p>Every roof is priced on its own scope and condition. Browse what we cover, then request a free quote for yours.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="svc-img grade dark">
+          <img class="parallax-img" src="/fort-payneroofing-clone/images/service-shingle.jpg" alt="Roofer carrying a bundle of shingles up a roof" loading="lazy" />
+        </div>
+        <div class="svc-body">
+          <span class="num">01</span>
+          <h3>Shingle Roofing</h3>
+          <p>Full tear-off and re-roof with new underlayment, flashing, and architectural asphalt shingles.</p>
+          <a class="svc-learn" href="/fort-payneroofing-clone/services/shingle-roofing">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="svc-img grade dark">
+          <img class="parallax-img" src="/fort-payneroofing-clone/images/service-repair.jpg" alt="Roofer repairing a section of shingle roof" loading="lazy" />
+        </div>
+        <div class="svc-body">
+          <span class="num">02</span>
+          <h3>Roof Repairs</h3>
+          <p>Leaks, wind-damaged and missing shingles, and failed flashing. Found, fixed, and sealed for good.</p>
+          <a class="svc-learn" href="/fort-payneroofing-clone/services/roof-repairs">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="svc-img grade dark">
+          <img class="parallax-img" src="/fort-payneroofing-clone/images/service-metal.jpg" alt="Standing seam metal roof detail" loading="lazy" />
+        </div>
+        <div class="svc-body">
+          <span class="num">03</span>
+          <h3>Metal Roofing</h3>
+          <p>Standing-seam and exposed-fastener metal systems, installed to outlast the house.</p>
+          <a class="svc-learn" href="/fort-payneroofing-clone/services/metal-roofing">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="svc-img grade dark">
+          <img class="parallax-img" src="/fort-payneroofing-clone/images/service-commercial.jpg" alt="Aerial view of a commercial flat roof" loading="lazy" />
+        </div>
+        <div class="svc-body">
+          <span class="num">04</span>
+          <h3>Commercial Roofing</h3>
+          <p>Shingle, metal, and low-slope systems for commercial and multi-family buildings.</p>
+          <a class="svc-learn" href="/fort-payneroofing-clone/services/commercial-roofing">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="services-cta reveal">
+      <p>Not sure which service you need? <b>Tell us what's going on and we'll figure it out together.</b></p>
+      <a href="/fort-payneroofing-clone/quote" class="btn btn-primary btn-sm">Get a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="projects section-pad" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Real jobs</p>
+        <h2 class="reveal-wipe">Before &amp; after</h2>
+      </div>
+      <p>Drag the slider to compare. Both are Fort Payne Roofing jobs. Full tear-offs down to the deck, re-decked and re-roofed.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-item reveal">
+        <div class="ba-slider" tabindex="0" role="slider" aria-label="Before and after comparison, project one" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <div class="ba-layer ba-before" data-img="/fort-payneroofing-clone/images/project-1-before.jpg"></div>
+          <div class="ba-layer ba-after" data-img="/fort-payneroofing-clone/images/project-1-after.jpg"></div>
+          <span class="ba-tag is-before">Before</span>
+          <span class="ba-tag is-after">After</span>
+          <div class="ba-empty"><span class="ph">Project photo pair</span><span>project-1-before.jpg &nbsp;/&nbsp; project-1-after.jpg</span></div>
+          <div class="ba-divider"></div>
+          <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="m6 9-3 3 3 3"/><path d="m18 9 3 3-3 3"/></svg></div>
+        </div>
+        <p class="ba-caption"><b>Full roof replacement:</b> old roof and siding torn off, finished in new dimensional shingles.</p>
+      </div>
+      <div class="ba-item reveal reveal-delay-1">
+        <div class="ba-slider" tabindex="0" role="slider" aria-label="Before and after comparison, project two" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <div class="ba-layer ba-before" data-img="/fort-payneroofing-clone/images/project-2-before.jpg"></div>
+          <div class="ba-layer ba-after" data-img="/fort-payneroofing-clone/images/project-2-after.jpg"></div>
+          <span class="ba-tag is-before">Before</span>
+          <span class="ba-tag is-after">After</span>
+          <div class="ba-empty"><span class="ph">Project photo pair</span><span>project-2-before.jpg &nbsp;/&nbsp; project-2-after.jpg</span></div>
+          <div class="ba-divider"></div>
+          <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="m6 9-3 3 3 3"/><path d="m18 9 3 3-3 3"/></svg></div>
+        </div>
+        <p class="ba-caption"><b>New construction:</b> from underlayment and starter course to a finished dimensional-shingle roof.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recent-work section-pad" id="recent-work">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Recent work</p>
+        <h2 class="reveal-wipe">Fresh off the roof</h2>
+      </div>
+      <p>A few jobs we've wrapped up recently around Fort Payne.</p>
+    </div>
+    <div class="recent-work-grid">
+      <div class="recent-work-item reveal">
+        <img src="/fort-payneroofing-clone/images/recent-work-1.jpg" alt="Completed shingle roof replacement on a large stone-and-siding home" loading="lazy" />
+      </div>
+      <div class="recent-work-item reveal reveal-delay-1">
+        <img src="/fort-payneroofing-clone/images/recent-work-2.jpg" alt="Finished shingle roof over an attached deck and pool area" loading="lazy" />
+      </div>
+      <div class="recent-work-item reveal reveal-delay-2">
+        <img src="/fort-payneroofing-clone/images/recent-work-3.jpg" alt="Completed roof replacement on a single-story home" loading="lazy" />
+      </div>
+      <div class="recent-work-item reveal reveal-delay-3">
+        <img src="/fort-payneroofing-clone/images/recent-work-4.jpg" alt="Close-up of a finished dimensional shingle roof" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edge section-pad" id="edge">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Why us</p>
+        <h2 class="reveal-wipe">Why Fort Payne Roofing</h2>
+      </div>
+      <p>The same things come up job after job. Here's what you can count on.</p>
+    </div>
+    <div class="edge-grid">
+      <div class="edge-card reveal">
+        <span class="wk">Pricing</span>
+        <h3>Fair &amp; upfront</h3>
+        <p>Free estimates and same-day quotes. Filing an insurance claim? We'll work with you on it, including Actual Cash Value roofs.</p>
+      </div>
+      <div class="edge-card reveal reveal-delay-1">
+        <span class="wk">On the job</span>
+        <h3>On schedule, no mess</h3>
+        <p>We start when we say we will and leave your property the way we found it. No debris left behind, no torn-up landscaping.</p>
+      </div>
+      <div class="edge-card reveal reveal-delay-2">
+        <span class="wk">Communication</span>
+        <h3>Every step</h3>
+        <p>From the first phone call to the last nail, you'll know what's happening and when. No guessing, no chasing us down.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews section-pad" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">In their words</p>
+        <h2 class="reveal-wipe">What customers say</h2>
+        <p class="google-badge"><svg class="google-g" viewBox="0 0 48 48" role="img" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span>Google Reviews :</span></p>
+      </div>
+    </div>
+
+    <div class="reviews-marquee reveal">
+      <div class="reviews-col dir-up">
+        <ul data-speed="22">
+          <li class="review-card">
+            <blockquote>&ldquo;Highly Recommend! I had reached out to Michael about my roof and he came out to inspect it turns out I had some damaged/missing shingles, every question I had he answered it with no hesitation, he gave us a quote we were happy with and a week later he came out and had our entire roof done in no time!&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">OC</div>
+              <div class="review-who"><span class="review-name">Oscar Cruz</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card">
+            <blockquote>&ldquo;Highly recommend! Amazing job by these guys! Michael and Junior was fantastic working with, from the first phone call until the job was completed! These guys answered any questions and communicated with every step that was taken place. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">TO</div>
+              <div class="review-who"><span class="review-name">Trey Ogle</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card">
+            <blockquote>&ldquo;They put a new roof on my house i couldn&rsquo;t be happier with the job they done. Great people to do business with!!&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">MH</div>
+              <div class="review-who"><span class="review-name">Mike Henderson</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;Highly Recommend! I had reached out to Michael about my roof and he came out to inspect it turns out I had some damaged/missing shingles, every question I had he answered it with no hesitation, he gave us a quote we were happy with and a week later he came out and had our entire roof done in no time!&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">OC</div>
+              <div class="review-who"><span class="review-name">Oscar Cruz</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;Highly recommend! Amazing job by these guys! Michael and Junior was fantastic working with, from the first phone call until the job was completed! These guys answered any questions and communicated with every step that was taken place. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">TO</div>
+              <div class="review-who"><span class="review-name">Trey Ogle</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;They put a new roof on my house i couldn&rsquo;t be happier with the job they done. Great people to do business with!!&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">MH</div>
+              <div class="review-who"><span class="review-name">Mike Henderson</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="reviews-col dir-up reviews-col-2">
+        <ul data-speed="17">
+          <li class="review-card">
+            <blockquote>&ldquo;I saw signs for Fort Payne Roofing LLC in my street, 3 of them. Then I saw some about town so with our roof badly needing done I called them. They were great from start to finish, they dealt with the insurance company and there were no set backs. So if you ever need a new roof take it from me call Firt Payne Roofing LLC first. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">L</div>
+              <div class="review-who"><span class="review-name">Lesley</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card">
+            <blockquote>&ldquo;I can&rsquo;t say enough good things about this roofing company! They have completed two roofs for me on two different houses, and both experiences were excellent from start to finish. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">A</div>
+              <div class="review-who"><span class="review-name">Ashley</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card">
+            <blockquote>&ldquo;Best roofing company ever! Excellent service fabulous job our new roof made our house look new. Wonderful people and no mess left behind! &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">JS</div>
+              <div class="review-who"><span class="review-name">Junior Stalvey</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;I saw signs for Fort Payne Roofing LLC in my street, 3 of them. Then I saw some about town so with our roof badly needing done I called them. They were great from start to finish, they dealt with the insurance company and there were no set backs. So if you ever need a new roof take it from me call Firt Payne Roofing LLC first. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">L</div>
+              <div class="review-who"><span class="review-name">Lesley</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;I can&rsquo;t say enough good things about this roofing company! They have completed two roofs for me on two different houses, and both experiences were excellent from start to finish. &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">A</div>
+              <div class="review-who"><span class="review-name">Ashley</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+          <li class="review-card" aria-hidden="true">
+            <blockquote>&ldquo;Best roofing company ever! Excellent service fabulous job our new roof made our house look new. Wonderful people and no mess left behind! &hellip;&rdquo;</blockquote>
+            <div class="review-footer">
+              <div class="review-avatar">JS</div>
+              <div class="review-who"><span class="review-name">Junior Stalvey</span><span class="review-src">Google review</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="projects-note" style="text-align:center;margin-top:30px;">Reviews are quoted from public Google reviews. An ellipsis marks a review Google shows truncated behind &ldquo;More&rdquo;.</p>
+  </div>
+</section>
+
+<section class="about section-pad" id="about">
+  <div class="container about-grid">
+    <div class="about-image grade dark reveal-scale">
+      <img class="parallax-img" src="/fort-payneroofing-clone/images/about.jpg" alt="A roofer stripping old shingles down to the deck" />
+    </div>
+    <div class="about-body reveal reveal-delay-1">
+      <p class="eyebrow">Who we are</p>
+      <p class="lead">We've been roofing homes and businesses around Fort Payne since 2021.</p>
+      <p>We specialize in shingle and metal installation, and we handle commercial roofs and roof repairs. It's a hands-on operation. When you call, you talk to the people who'll actually be on your roof.</p>
+      <p class="fine">Ask for Michael or Junior. We'll come out, look at what you're dealing with, and give you a straight answer and a fair price, whether it's a full replacement or a single leak.</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="container quote-band-inner reveal">
+    <p class="eyebrow">Ready to start?</p>
+    <h2 class="reveal-wipe">Get a free quote on your roof</h2>
+    <p>Tell us what you're dealing with. We'll follow up fast, often the same day, to set up an estimate.</p>
+    <div class="band-actions">
+      <a href="/fort-payneroofing-clone/quote" class="btn btn-dark">Get a Free Quote</a>
+      <a href="tel:+12566305125" class="btn btn-dark">Call (256) 630-5125</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact section-pad" id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="reveal-wipe">Let's talk about your roof</h2>
+      <div class="info-row">
+        <span class="label">Phone</span>
+        <span class="value"><a href="tel:+12566305125">(256) 630-5125</a></span>
+      </div>
+      <div class="info-row">
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></span>
+      </div>
+      <div class="info-row">
+        <span class="label">Office</span>
+        <span class="value">1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Hours</span>
+        <span class="value">Mon&ndash;Fri, 8:00am&ndash;5:00pm</span>
+      </div>
+      <div class="hero-actions" style="justify-content:flex-start;margin-top:30px;">
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map" id="map">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Find us</p>
+        <h2 class="reveal-wipe">On Gault Avenue</h2>
+      </div>
+      <p>Our office is right on Gault Avenue North in Fort Payne. Stop by or call ahead.</p>
+    </div>
+    <div class="map-frame reveal is-fallback">
+      <div id="map-canvas" class="map-canvas" role="img" aria-label="Map showing Fort Payne Roofing LLC at 1506 Gault Avenue North, Suite A, Fort Payne, AL 35967"></div>
+      <div class="map-fallback">
+        <img class="map-fallback-img" src="/fort-payneroofing-clone/images/map-static.jpg" alt="Map showing Fort Payne Roofing LLC's location at 1506 Gault Avenue North, Suite A, Fort Payne, AL 35967" />
+        <div class="map-fallback-card">
+          <p class="addr">1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+          <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&query=34.45513,-85.71022" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="#services">Services</a>
+          <a href="#projects">Before &amp; After</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="view" id="view-quote">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="quote-page">
+  <div class="quote-wrap">
+
+    <div class="quote-panel active" id="panel-form">
+      <div class="quote-head">
+        <p class="eyebrow" style="justify-content:center;">Free quote</p>
+        <h1>Tell us about your roof</h1>
+        <p>A few quick questions. We'll call or text you back fast, often the same day.</p>
+        <span class="quoting-tag" id="quoting-tag" hidden></span>
+      </div>
+
+      <form id="quote-form" novalidate>
+        <div class="form-grid">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(256) 555-5555" autocomplete="tel" inputmode="tel" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="address">Property address <span class="optional">(optional)</span></label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, Fort Payne, AL" autocomplete="street-address" maxlength="200" />
+          </div>
+          <div class="form-field">
+            <label for="service">Roof type</label>
+            <select id="service" name="service" required>
+              <option value="">Select one</option>
+              <option value="shingle">Shingle</option>
+              <option value="metal">Metal</option>
+              <option value="commercial">Commercial / flat roof</option>
+              <option value="repairs">Roof repair</option>
+              <option value="other">Not sure</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Description <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="3" maxlength="2000" placeholder="What's going on with your roof? Leaks, storm damage, age, anything that helps."></textarea>
+          </div>
+        </div>
+
+        <div class="form-error" id="form-error"></div>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Request My Quote</button>
+          <p class="form-consent">By submitting, you agree to our <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a> and <a href="/fort-payneroofing-clone/terms">Terms of Service</a>, and agree to be contacted about your request by phone or text.</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="quote-panel" id="panel-confirm">
+      <div class="confirm-panel">
+        <div class="confirm-icon">&#10003;</div>
+        <h2>Request received</h2>
+        <p>Thanks! We'll call or text you within one business day.</p>
+        <span class="confirm-ref" id="confirm-ref"></span>
+        <div class="confirm-summary">
+          <div class="summary-row"><span class="k">Name</span><span class="v" id="confirm-name"></span></div>
+          <div class="summary-row"><span class="k">Phone</span><span class="v" id="confirm-phone"></span></div>
+          <div class="summary-row" id="confirm-address-row" hidden><span class="k">Address</span><span class="v" id="confirm-address"></span></div>
+          <div class="summary-row"><span class="k">Roof type</span><span class="v" id="confirm-service"></span></div>
+          <div class="summary-row" id="confirm-message-row" hidden><span class="k">Description</span><span class="v" id="confirm-message"></span></div>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:30px;">
+          <a href="/fort-payneroofing-clone/" class="btn btn-outline-dark">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="view" id="view-privacy">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="legal section-pad">
+  <div class="container">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="legal-eff">Effective date: September 28, 2026</p>
+
+    <p class="legal-lead">Fort Payne Roofing respects your privacy and is committed to protecting the personal information you provide through our website.</p>
+
+    <h2>Information We Collect</h2>
+    <p>When you contact us, request a roofing estimate, schedule an inspection, or submit a form through our website, we may collect information such as:</p>
+    <ul>
+      <li>Name</li>
+      <li>Phone number</li>
+      <li>Email address</li>
+      <li>Property address</li>
+      <li>Information about your roofing project, repair, or service request</li>
+      <li>Any additional information you voluntarily provide</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We may use the information you provide to:</p>
+    <ul>
+      <li>Respond to your questions or service requests</li>
+      <li>Schedule roofing estimates or inspections</li>
+      <li>Contact you regarding your roofing project</li>
+      <li>Provide customer service</li>
+      <li>Follow up regarding requested services</li>
+      <li>Improve our website and services</li>
+    </ul>
+
+    <h2>Phone Calls and Text Messages</h2>
+    <p>If you provide your phone number, Fort Payne Roofing may contact you by phone or text message regarding your inquiry, estimate, appointment, or requested roofing services.</p>
+    <p>Providing your phone number does not require you to purchase any service.</p>
+    <p>If you receive text messages from us, message and data rates may apply. You may request to stop receiving text messages at any time by replying STOP.</p>
+
+    <h2>Sharing Your Information</h2>
+    <p>Fort Payne Roofing does not sell or rent your personal information.</p>
+    <p>We may share information with trusted service providers when necessary to operate our website, process inquiries, manage appointments, provide customer service, or perform other services on our behalf.</p>
+    <p>Information may also be disclosed when required by law or when reasonably necessary to protect our business, customers, or legal rights.</p>
+
+    <h2>Website and Third-Party Services</h2>
+    <p>Our website may use third-party services for website hosting, analytics, forms, scheduling, communications, or other business functions. These providers may process limited information as necessary to provide their services.</p>
+
+    <h2>Data Security</h2>
+    <p>We take reasonable steps to protect the personal information submitted through our website. However, no website, internet transmission, or electronic storage system can be guaranteed to be completely secure.</p>
+
+    <h2>Your Choices</h2>
+    <p>You may contact us if you would like to:</p>
+    <ul>
+      <li>Ask what personal information we have about you</li>
+      <li>Correct inaccurate information</li>
+      <li>Request deletion of your information &mdash; email <a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a> or call <a href="tel:+12566305125">(256) 630-5125</a> and we will remove it unless we are required to keep it</li>
+      <li>Ask us to stop contacting you for marketing purposes</li>
+    </ul>
+
+    <h2>Children&rsquo;s Privacy</h2>
+    <p>Our website and roofing services are not intended to collect personal information from children under 13.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically. Any updates will be posted on this page.</p>
+
+    <h2>Contact Us</h2>
+    <div class="legal-contact">
+      <p class="legal-contact-name">Fort Payne Roofing</p>
+      <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+      <p>Phone: <a href="tel:+12566305125">(256) 630-5125</a></p>
+      <p>Email: <a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="view" id="view-terms">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="legal section-pad">
+  <div class="container">
+    <p class="eyebrow">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="legal-eff">Effective date: September 28, 2026</p>
+
+    <p class="legal-lead">These Terms of Service govern your use of the Fort Payne Roofing LLC website. By using this site or submitting a form through it, you agree to these terms.</p>
+
+    <h2>Who We Are</h2>
+    <p>This website is operated by Fort Payne Roofing LLC, 1506 Gault Avenue North, Suite&nbsp;A, Fort Payne, AL 35967. You can reach us at <a href="tel:+12566305125">(256) 630-5125</a> or <a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a>.</p>
+
+    <h2>Using This Website</h2>
+    <p>You may use this site to learn about our services and to request an estimate, inspection, or other roofing work. You agree not to use the site to submit false information, to interfere with its operation, or for any unlawful purpose.</p>
+
+    <h2>Quotes, Estimates, and Inspections</h2>
+    <p>Information submitted through our quote form is a request, not a binding agreement. Nothing on this website is an offer or a guarantee of price, availability, or scheduling.</p>
+    <p>Any figure shown on this site or given in an initial conversation is an estimate. A final price depends on an on-site inspection of your roof, its condition, size, pitch, materials, and access. Work begins only under a separate written agreement signed by you and by Fort Payne Roofing LLC. If these Terms and that signed agreement ever conflict, the signed agreement controls.</p>
+
+    <h2>Contacting You</h2>
+    <p>When you submit a form, you agree that we may contact you about your request by phone, text message, or email at the contact details you provide. Message and data rates may apply. Consent to be contacted is not a condition of purchase, and you may ask us to stop at any time &mdash; reply STOP to a text, or contact us directly. How we handle the information you submit is described in our.</p>
+
+    <h2>Warranties</h2>
+    <p>Warranty terms depend on the materials and manufacturer used on your specific job, and are set out in your signed agreement rather than on this website. Nothing on this site creates a warranty on its own.</p>
+
+    <h2>Website Content</h2>
+    <p>The text, photographs, project images, logo, and design on this site belong to Fort Payne Roofing LLC and may not be copied or reused without our permission. Photographs of completed work show past projects and are not a promise of an identical result.</p>
+
+    <h2>Third-Party Services and Links</h2>
+    <p>This site relies on third-party services for hosting, forms, mapping, and similar functions, and may link to outside websites. We do not control those services or sites and are not responsible for their content or their practices.</p>
+
+    <h2>Disclaimer and Limitation of Liability</h2>
+    <p>This website is provided on an &ldquo;as is&rdquo; basis. We work to keep it accurate and available, but we do not guarantee that it will be uninterrupted, error-free, or current at all times.</p>
+    <p>To the fullest extent permitted by Alabama law, Fort Payne Roofing LLC is not liable for indirect or consequential damages arising from your use of this website. This does not limit our obligations under any signed agreement for roofing work, or any rights you have that cannot be waived under applicable law.</p>
+
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. Any updates will be posted on this page with a revised effective date.</p>
+
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by the laws of the State of Alabama, without regard to its conflict-of-law rules.</p>
+
+    <h2>Contact Us</h2>
+    <div class="legal-contact">
+      <p class="legal-contact-name">Fort Payne Roofing LLC</p>
+      <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+      <p>Phone: <a href="tel:+12566305125">(256) 630-5125</a></p>
+      <p>Email: <a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="view" id="view-service-shingle">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="svc-hero">
+  <div class="grade dark">
+    <img src="/fort-payneroofing-clone/images/service-shingle.jpg" alt="Roofer carrying a bundle of shingles up a roof" />
+  </div>
+  <div class="container svc-hero-content">
+    <a href="/fort-payneroofing-clone/#services" class="back-link">&larr; All Services</a>
+    <p class="eyebrow on-dark">Residential</p>
+    <h1>Shingle Roofing, Done Right</h1>
+    <p>Full tear-off and re-roof with new underlayment, flashing, and architectural asphalt shingles.</p>
+  </div>
+</header>
+
+<section class="svc-intro">
+  <div class="container">
+    <p>Whether it's a full tear-off or a targeted replacement, shingle roofing is the job we run most often, and the one where the small details (underlayment, flashing, nail pattern) decide whether it lasts 10 years or 30.</p>
+  </div>
+</section>
+
+<section class="svc-steps">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="reveal-wipe">Four steps, start to finish</h2>
+      </div>
+    </div>
+    <div class="svc-steps-grid">
+      <div class="svc-step reveal reveal-delay-1">
+        <span class="stepnum">01</span>
+        <h3>Inspection &amp; Estimate</h3>
+        <p>We climb up, check the decking, and give you a straight assessment and a free quote.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-2">
+        <span class="stepnum">02</span>
+        <h3>Material &amp; Color</h3>
+        <p>Pick your shingle line and color; we order what's in stock locally when we can.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">03</span>
+        <h3>Tear-Off &amp; Install</h3>
+        <p>Full tear-off to the deck, new underlayment and flashing, then a clean shingle install.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">04</span>
+        <h3>Cleanup &amp; Walkthrough</h3>
+        <p>Magnetic sweep for nails, haul-off, and a final walkthrough before we call it done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-included">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">What's included</p>
+        <h2 class="reveal-wipe">Every job includes</h2>
+      </div>
+    </div>
+    <ul class="svc-included-grid">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Full tear-off to bare decking</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>New synthetic underlayment</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>New flashing at valleys &amp; penetrations</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ridge vent installed or replaced</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Magnetic nail sweep of the yard</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Manufacturer-grade architectural shingles</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="quote-band quote-band-sm">
+  <div class="container quote-band-inner reveal">
+    <p class="eyebrow">Ready to start?</p>
+    <h2 class="reveal-wipe">Get a free quote on your shingle roofing</h2>
+    <p>Tell us what you're dealing with. We'll follow up fast, often the same day, to set up an estimate.</p>
+    <div class="band-actions">
+      <a href="/fort-payneroofing-clone/quote?service=Shingle%20Roofing" class="btn btn-dark">Get a Free Quote</a>
+      <a href="tel:+12566305125" class="btn btn-dark">Call (256) 630-5125</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="view" id="view-service-repairs">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="svc-hero">
+  <div class="grade dark">
+    <img src="/fort-payneroofing-clone/images/service-repair.jpg" alt="Roofer repairing a section of shingle roof" />
+  </div>
+  <div class="container svc-hero-content">
+    <a href="/fort-payneroofing-clone/#services" class="back-link">&larr; All Services</a>
+    <p class="eyebrow on-dark">Residential</p>
+    <h1>Roof Repairs That Actually Fix It</h1>
+    <p>Leaks, wind-damaged and missing shingles, and failed flashing. Found, fixed, and sealed for good.</p>
+  </div>
+</header>
+
+<section class="svc-intro">
+  <div class="container">
+    <p>Not every problem needs a new roof. Most leaks trace back to one bad flashing detail, a cracked pipe boot, or a run of wind-lifted shingles. We find the actual cause before we patch anything.</p>
+  </div>
+</section>
+
+<section class="svc-steps">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="reveal-wipe">Four steps, start to finish</h2>
+      </div>
+    </div>
+    <div class="svc-steps-grid">
+      <div class="svc-step reveal reveal-delay-1">
+        <span class="stepnum">01</span>
+        <h3>Find the Leak</h3>
+        <p>We trace water stains back to the real entry point, not just the nearest shingle.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-2">
+        <span class="stepnum">02</span>
+        <h3>Diagnose &amp; Quote</h3>
+        <p>You get a clear explanation of what's wrong and a price before any work starts.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">03</span>
+        <h3>Repair</h3>
+        <p>Shingles, flashing, boots, or decking replaced as needed, matched to your existing roof.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">04</span>
+        <h3>Verify</h3>
+        <p>We check the fix holds, and walk you through exactly what we did.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-included">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">What's included</p>
+        <h2 class="reveal-wipe">Every job includes</h2>
+      </div>
+    </div>
+    <ul class="svc-included-grid">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Leak tracing &amp; diagnosis</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Shingle &amp; flashing replacement</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Pipe boot &amp; vent repair</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Valley &amp; chimney flashing</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Storm &amp; wind-damage repair</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Written scope before work starts</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="quote-band quote-band-sm">
+  <div class="container quote-band-inner reveal">
+    <p class="eyebrow">Ready to start?</p>
+    <h2 class="reveal-wipe">Get a free quote on your roof repairs</h2>
+    <p>Tell us what you're dealing with. We'll follow up fast, often the same day, to set up an estimate.</p>
+    <div class="band-actions">
+      <a href="/fort-payneroofing-clone/quote?service=Roof%20Repairs" class="btn btn-dark">Get a Free Quote</a>
+      <a href="tel:+12566305125" class="btn btn-dark">Call (256) 630-5125</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="view" id="view-service-metal">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="svc-hero">
+  <div class="grade dark">
+    <img src="/fort-payneroofing-clone/images/service-metal.jpg" alt="Standing seam metal roof detail" />
+  </div>
+  <div class="container svc-hero-content">
+    <a href="/fort-payneroofing-clone/#services" class="back-link">&larr; All Services</a>
+    <p class="eyebrow on-dark">Residential</p>
+    <h1>Metal Roofing Built to Outlast the House</h1>
+    <p>Standing-seam and exposed-fastener metal systems, installed to outlast the house.</p>
+  </div>
+</header>
+
+<section class="svc-intro">
+  <div class="container">
+    <p>Metal roofing costs more up front than shingles and outlasts them by decades. We install both standing-seam and exposed-fastener systems to spec: proper panel layout, trim, and fastening from day one.</p>
+  </div>
+</section>
+
+<section class="svc-steps">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="reveal-wipe">Four steps, start to finish</h2>
+      </div>
+    </div>
+    <div class="svc-steps-grid">
+      <div class="svc-step reveal reveal-delay-1">
+        <span class="stepnum">01</span>
+        <h3>System Selection</h3>
+        <p>Standing-seam or exposed-fastener, panel style and color, based on your roof and budget.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-2">
+        <span class="stepnum">02</span>
+        <h3>Measure &amp; Order</h3>
+        <p>We measure the roof and order panels cut to spec.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">03</span>
+        <h3>Install</h3>
+        <p>Underlayment, panels, trim, and flashing installed in the correct sequence for a weathertight roof.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">04</span>
+        <h3>Final Check</h3>
+        <p>Every seam and fastener checked before we call the job complete.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-included">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">What's included</p>
+        <h2 class="reveal-wipe">Every job includes</h2>
+      </div>
+    </div>
+    <ul class="svc-included-grid">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Standing-seam or exposed-fastener panels</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>New underlayment &amp; clips</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ridge, eave &amp; rake trim</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Proper fastening pattern</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Flashing at all penetrations</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Decades-long expected lifespan</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="quote-band quote-band-sm">
+  <div class="container quote-band-inner reveal">
+    <p class="eyebrow">Ready to start?</p>
+    <h2 class="reveal-wipe">Get a free quote on your metal roofing</h2>
+    <p>Tell us what you're dealing with. We'll follow up fast, often the same day, to set up an estimate.</p>
+    <div class="band-actions">
+      <a href="/fort-payneroofing-clone/quote?service=Metal%20Roofing" class="btn btn-dark">Get a Free Quote</a>
+      <a href="tel:+12566305125" class="btn btn-dark">Call (256) 630-5125</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="view" id="view-service-commercial">
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="/fort-payneroofing-clone/" class="brand">Fort Payne Roofing<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/fort-payneroofing-clone/#services">Services</a>
+        <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+        <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+        <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+        <a href="/fort-payneroofing-clone/#about">About</a>
+        <a href="/fort-payneroofing-clone/#contact">Contact</a>
+        <a href="/fort-payneroofing-clone/quote" class="btn btn-primary">Free Quote</a>
+      </div>
+      <img class="nav-logo" src="/fort-payneroofing-clone/images/logo.png" alt="Fort Payne Roofing LLC logo" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='/fort-payneroofing-clone/images/logo.svg';}" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="svc-hero">
+  <div class="grade dark">
+    <img src="/fort-payneroofing-clone/images/service-commercial.jpg" alt="Aerial view of a commercial flat roof" />
+  </div>
+  <div class="container svc-hero-content">
+    <a href="/fort-payneroofing-clone/#services" class="back-link">&larr; All Services</a>
+    <p class="eyebrow on-dark">Commercial</p>
+    <h1>Commercial Roofing That Keeps You Open</h1>
+    <p>Shingle, metal, and low-slope systems for commercial and multi-family buildings.</p>
+  </div>
+</header>
+
+<section class="svc-intro">
+  <div class="container">
+    <p>Shingle, metal, or low-slope: commercial roofs get scheduled around your operation, not the other way around. We work directly with property managers and business owners, phased if needed.</p>
+  </div>
+</section>
+
+<section class="svc-steps">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="reveal-wipe">Four steps, start to finish</h2>
+      </div>
+    </div>
+    <div class="svc-steps-grid">
+      <div class="svc-step reveal reveal-delay-1">
+        <span class="stepnum">01</span>
+        <h3>Site Walk &amp; Scope</h3>
+        <p>We assess the roof, drainage, and any recurring problem areas.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-2">
+        <span class="stepnum">02</span>
+        <h3>Proposal</h3>
+        <p>A written scope and quote, phased around your hours if needed.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">03</span>
+        <h3>Installation or Repair</h3>
+        <p>Crews work efficiently to minimize disruption to your business.</p>
+      </div>
+      <div class="svc-step reveal reveal-delay-3">
+        <span class="stepnum">04</span>
+        <h3>Sign-Off</h3>
+        <p>A final walkthrough with whoever manages the property, documented.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-included">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">What's included</p>
+        <h2 class="reveal-wipe">Every job includes</h2>
+      </div>
+    </div>
+    <ul class="svc-included-grid">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Shingle, metal &amp; low-slope systems</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Leak repair on active buildings</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Phased scheduling available</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Property manager communication</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Emergency tarping available</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Multi-family &amp; commercial experience</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="quote-band quote-band-sm">
+  <div class="container quote-band-inner reveal">
+    <p class="eyebrow">Ready to start?</p>
+    <h2 class="reveal-wipe">Get a free quote on your commercial roofing</h2>
+    <p>Tell us what you're dealing with. We'll follow up fast, often the same day, to set up an estimate.</p>
+    <div class="band-actions">
+      <a href="/fort-payneroofing-clone/quote?service=Commercial%20Roofing" class="btn btn-dark">Get a Free Quote</a>
+      <a href="tel:+12566305125" class="btn btn-dark">Call (256) 630-5125</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="brand">Fort Payne Roofing LLC<span>Shingle &middot; Metal &middot; Commercial &middot; Since 2021</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="/fort-payneroofing-clone/#services">Services</a>
+          <a href="/fort-payneroofing-clone/#projects">Before &amp; After</a>
+          <a href="/fort-payneroofing-clone/#edge">Why Us</a>
+          <a href="/fort-payneroofing-clone/#reviews">Reviews</a>
+          <a href="/fort-payneroofing-clone/#about">About</a>
+          <a href="/fort-payneroofing-clone/#contact">Contact</a>
+          <a href="/fort-payneroofing-clone/privacy">Privacy Policy</a>
+          <a href="/fort-payneroofing-clone/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+12566305125">(256) 630-5125</a></p>
+          <p><a href="mailto:fortpayneroofing@gmail.com">fortpayneroofing@gmail.com</a></p>
+          <p>1506 Gault Avenue North, Suite&nbsp;A<br />Fort Payne, AL 35967</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quote</h4>
+          <a href="/fort-payneroofing-clone/quote">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Fort Payne Roofing LLC. All rights reserved.</span>
+      <span class="flag">In business since 2021 &middot; Fort Payne, Alabama</span>
+    </div>
+  </div>
+</footer>
+
+<div class="chatbot" id="chatbot">
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat with Fort Payne Roofing" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <span class="chatbot-dot"></span>
+  </button>
+  <div class="chatbot-panel" role="dialog" aria-label="Fort Payne Roofing chat assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><path d="M8 16h.01"/><path d="M16 16h.01"/></svg></div>
+      <div class="chatbot-header-text">
+        <strong>Fort Payne Roofing</strong>
+        <span>Online now</span>
+      </div>
+      <button type="button" class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-suggestions" id="chatbot-suggestions"></div>
+    <form class="chatbot-form" id="chatbot-form" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Ask about pricing, services, your project..." aria-label="Type a message" />
+      <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</div>
+</div>
+
+<script>
+(function () {
+  // Real URLs via the History API. The old router read location.hash, which
+  // produced "#/#contact" in the address bar and left the back button landing
+  // on stale hash states. Paths below are the same ones the host rewrites to
+  // index.html (_redirects on Netlify, vercel.json rewrites on Vercel).
+  var ROUTES = {
+    "/": "", "/quote": "quote", "/privacy": "privacy", "/terms": "terms",
+    "/services/shingle-roofing": "service-shingle",
+    "/services/roof-repairs": "service-repairs",
+    "/services/metal-roofing": "service-metal",
+    "/services/commercial-roofing": "service-commercial"
+  };
+  function viewIdFor(key) { return key === '' ? 'view-home' : 'view-' + key; }
+  function normalise(path) {
+    path = (path || '/').replace(/\/+$/, '');
+    return path === '' ? '/' : path;
+  }
+  function keyFor(path) {
+    var p = normalise(path);
+    return Object.prototype.hasOwnProperty.call(ROUTES, p) ? ROUTES[p] : null;
+  }
+
+  function route(opts) {
+    opts = opts || {};
+    var key = keyFor(location.pathname);
+    if (key === null) key = '';                       // unknown path falls back to home
+    var query = new URLSearchParams(location.search);
+    var frag = (location.hash || '').replace(/^#/, '');
+
+    document.querySelectorAll('.view').forEach(function (v) {
+      v.classList.toggle('active', v.id === viewIdFor(key));
+    });
+    document.querySelectorAll('.nav-links.open').forEach(function (n) { n.classList.remove('open'); });
+    document.querySelectorAll('.nav-toggle.active').forEach(function (n) { n.classList.remove('active'); });
+    if (key === 'quote') applyQuotePreselect(query.get('service'));
+
+    if (frag) {
+      var el = document.getElementById(frag);
+      if (el) {
+        runReveals();
+        el.scrollIntoView(opts.smooth ? { behavior: 'smooth', block: 'start' } : undefined);
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+    runReveals();
+  }
+
+  function navigate(url, smooth) {
+    history.pushState({}, '', url);
+    route({ smooth: smooth });
+  }
+
+  // One delegated handler: internal links move through the router, everything
+  // else (tel:, mailto:, external, new-tab, modified clicks) is left alone.
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || a.target === '_blank' || a.hasAttribute('download')) return;
+    var href = a.getAttribute('href');
+    if (!href) return;
+
+    if (href.charAt(0) === '#') {                      // in-page anchor
+      var id = href.slice(1);
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      navigate(location.pathname + '#' + id, true);
+      return;
+    }
+    if (href.charAt(0) !== '/') return;                // external / tel: / mailto:
+    var url = new URL(href, location.origin);
+    if (url.origin !== location.origin || keyFor(url.pathname) === null) return;
+    e.preventDefault();
+    navigate(url.pathname + url.search + url.hash, Boolean(url.hash));
+  });
+
+  window.addEventListener('popstate', function () { route(); });
+
+  document.querySelectorAll('[id="year"]').forEach(function (y) { y.textContent = new Date().getFullYear(); });
+
+  document.querySelectorAll('.nav-toggle').forEach(function (toggle) {
+    var links = toggle.closest('.nav').querySelector('.nav-links');
+    toggle.addEventListener('click', function () {
+      links.classList.toggle('open'); toggle.classList.toggle('active');
+    });
+  });
+
+
+
+
+  // reviews marquee — driven by elapsed time in its own rAF loop rather than
+  // a CSS animation, so it keeps flowing regardless of scroll direction.
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var marqueeLists = Array.prototype.slice.call(document.querySelectorAll('.reviews-col ul'));
+    if (!marqueeLists.length) return;
+    var marquee = document.querySelector('.reviews-marquee');
+    var marqueePaused = false;
+    if (marquee) {
+      // Ignore mouseenter events that land right after a scroll — on a
+      // trackpad/wheel scroll the cursor never moves, but the marquee
+      // scrolls up underneath it and the browser fires a real mouseenter
+      // anyway, which read as "it freezes as soon as I scroll."
+      var recentScroll = false;
+      var recentScrollTimer = null;
+      window.addEventListener('scroll', function () {
+        recentScroll = true;
+        clearTimeout(recentScrollTimer);
+        recentScrollTimer = setTimeout(function () { recentScroll = false; }, 250);
+      }, { passive: true });
+      marquee.addEventListener('mouseenter', function () { if (!recentScroll) marqueePaused = true; });
+      marquee.addEventListener('focusin', function () { marqueePaused = true; });
+      ['mouseleave', 'focusout'].forEach(function (evt) { marquee.addEventListener(evt, function () { marqueePaused = false; }); });
+    }
+    var offsets = marqueeLists.map(function () { return 0; });
+    var lastTick = performance.now();
+    function tickMarquee(now) {
+      var dt = Math.min((now - lastTick) / 1000, 0.1);
+      lastTick = now;
+      if (!marqueePaused) {
+        marqueeLists.forEach(function (ul, i) {
+          var half = ul.scrollHeight / 2;
+          var speed = parseFloat(ul.dataset.speed) || 20;
+          if (half > 0) {
+            offsets[i] = (offsets[i] + speed * dt) % half;
+            ul.style.transform = 'translateY(' + (-offsets[i]).toFixed(2) + 'px)';
+          }
+        });
+      }
+      requestAnimationFrame(tickMarquee);
+    }
+    requestAnimationFrame(tickMarquee);
+  })();
+
+  // "liquid" CTA treatment on every button + the floating pill
+  document.querySelectorAll('.btn, .floating-cta').forEach(function (el) {
+    el.style.setProperty('--sheen-delay', (Math.random() * 2.4).toFixed(2) + 's');
+    el.addEventListener('pointermove', function (e) {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (((e.clientX - r.left) / r.width) * 100) + '%');
+      el.style.setProperty('--my', (((e.clientY - r.top) / r.height) * 100) + '%');
+    });
+    el.addEventListener('pointerleave', function () {
+      el.style.setProperty('--mx', '50%'); el.style.setProperty('--my', '50%');
+    });
+    el.addEventListener('click', function (e) {
+      var r = el.getBoundingClientRect();
+      var size = Math.max(r.width, r.height) * 1.6;
+      var ripple = document.createElement('span');
+      ripple.className = 'btn-ripple';
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - r.left) + 'px';
+      ripple.style.top = (e.clientY - r.top) + 'px';
+      el.appendChild(ripple);
+      ripple.addEventListener('animationend', function () { ripple.remove(); });
+    });
+  });
+
+  // before/after sliders
+  document.querySelectorAll('.ba-slider').forEach(function (slider) {
+    slider.querySelectorAll('.ba-layer').forEach(function (layer) {
+      var src = layer.getAttribute('data-img');
+      if (!src) return;
+      var probe = new Image();
+      probe.onload = function () {
+        layer.style.backgroundImage = 'url("' + src + '")';
+        var em = slider.querySelector('.ba-empty'); if (em) em.remove();
+      };
+      probe.src = src;
+    });
+    var setPos = function (cx) {
+      var r = slider.getBoundingClientRect();
+      var pct = Math.min(Math.max((cx - r.left) / r.width, 0), 1) * 100;
+      slider.style.setProperty('--pos', pct.toFixed(1) + '%');
+      slider.setAttribute('aria-valuenow', Math.round(pct));
+    };
+    var drag = false;
+    slider.addEventListener('pointerdown', function (e) { drag = true; try { slider.setPointerCapture(e.pointerId); } catch (_) {} setPos(e.clientX); });
+    slider.addEventListener('pointermove', function (e) { if (drag) setPos(e.clientX); });
+    slider.addEventListener('pointerup', function () { drag = false; });
+    slider.addEventListener('pointercancel', function () { drag = false; });
+    slider.addEventListener('keydown', function (e) {
+      var cur = parseFloat(slider.getAttribute('aria-valuenow')) || 50;
+      if (e.key === 'ArrowLeft') { e.preventDefault(); var v = Math.max(cur - 4, 0); slider.style.setProperty('--pos', v + '%'); slider.setAttribute('aria-valuenow', v); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); var w = Math.min(cur + 4, 100); slider.style.setProperty('--pos', w + '%'); slider.setAttribute('aria-valuenow', w); }
+    });
+  });
+
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function runReveals() {
+    document.querySelectorAll('.view.active .reveal, .view.active .reveal-scale, .view.active .reveal-wipe').forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.95) el.classList.add('in');
+    });
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal, .reveal-scale, .reveal-wipe').forEach(function (el) { io.observe(el); });
+
+  var nav = document.querySelectorAll('.nav');
+  var progressBar = document.getElementById('scroll-progress');
+  var floatingCtas = document.querySelectorAll('.floating-cta');
+  var chat = document.querySelector('.chatbot');
+  var lastSy = window.scrollY;
+  var ticking = false;
+  function upd() {
+    var sy = window.scrollY;
+    runReveals();
+    var home = document.getElementById('view-home').classList.contains('active');
+    nav.forEach(function (n) { n.classList.toggle('scrolled', !home || sy > 40); });
+    if (chat) {
+      var svcView = !!document.querySelector('.view.active .svc-hero');
+      if (!svcView || chat.classList.contains('is-open') || sy < 80) chat.classList.remove('is-tucked');
+      else if (sy > lastSy + 2) chat.classList.add('is-tucked');
+      else if (sy < lastSy - 2) chat.classList.remove('is-tucked');
+      lastSy = sy;
+    }
+    var activeHero = document.querySelector('.view.active .hero');
+    floatingCtas.forEach(function (cta) {
+      var showAfter = activeHero ? (activeHero.offsetHeight || window.innerHeight) * 0.6 : 200;
+      cta.classList.toggle('is-visible', sy > showAfter);
+    });
+    if (progressBar) {
+      var dh = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.setProperty('--progress', (dh > 0 ? Math.min(Math.max(sy / dh, 0), 1) : 0).toFixed(4));
+    }
+    if (!prefersReduced) {
+      var vh = window.innerHeight;
+      document.querySelectorAll('.view.active .parallax-img').forEach(function (img) {
+        var rect = img.parentElement.getBoundingClientRect();
+        var c = rect.top + rect.height / 2;
+        var t = Math.min(Math.max((vh / 2 - c) / (vh / 2 + rect.height / 2), -1), 1);
+        img.style.transform = 'scale(1.12) translateY(' + (t * 22).toFixed(1) + 'px)';
+      });
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { requestAnimationFrame(upd); ticking = true; } }, { passive: true });
+  window.addEventListener('resize', upd, { passive: true });
+
+  // ---- quote form (client-side stub, shared across every view instance) ----
+  var form = document.getElementById('quote-form');
+  var svc = document.getElementById('service');
+
+  // A service page's quote button arrives as #/quote?service=Metal%20Roofing:
+  // preselect the matching roof type and show a small "Quoting:" tag.
+  var SERVICE_FROM_PAGE = { 'shingle roofing': 'shingle', 'metal roofing': 'metal', 'commercial roofing': 'commercial', 'roof repairs': 'repairs' };
+  function applyQuotePreselect(name) {
+    var id = name && SERVICE_FROM_PAGE[name.toLowerCase()];
+    if (!id || !svc) return;
+    svc.value = id;
+    var tag = document.getElementById('quoting-tag');
+    if (tag) { tag.hidden = false; tag.textContent = 'Quoting: ' + svc.options[svc.selectedIndex].textContent; }
+  }
+
+  var seq = 100;
+  function bad(msg, btn) {
+    document.getElementById('form-error').textContent = msg;
+    btn.disabled = false; btn.textContent = 'Request My Quote';
+  }
+  if (form) form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('form-error').textContent = '';
+    var btn = document.getElementById('submit-btn');
+    btn.disabled = true; btn.textContent = 'Sending\u2026';
+    var name = document.getElementById('name').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    if (name.length < 2) return bad('Please enter your name.', btn);
+    if (phone.replace(/\D/g, '').length < 10) return bad('Please enter a valid phone number.', btn);
+    if (!svc.value) return bad('Please pick a roof type.', btn);
+    var roofType = svc.options[svc.selectedIndex].textContent;
+    var description = document.getElementById('message').value.trim();
+    var address = document.getElementById('address').value.trim();
+    var fd = new FormData(form);
+    // Where the request is sent is decided at build time (build.py --form), so
+    // it always matches the host. Netlify Forms posts to '/', any other host
+    // needs a real endpoint. Success is shown ONLY on a genuine 2xx — it used
+    // to be shown unconditionally, which on the wrong host meant the customer
+    // saw "request received" while the lead went nowhere.
+    var FORM_ACTION = "https://formsubmit.co/ajax/fortpayneroofing@gmail.com";
+    var req;
+    if (FORM_ACTION) {
+      // Hosted endpoint (Vercel and friends): must be JSON to a CORS-enabled
+      // URL — a plain form post would be blocked by the browser.
+      var payload = {};
+      payload.name = name;
+      payload.phone = phone;
+      if (address) payload.address = address;
+      payload.roof_type = roofType;
+      if (description) payload.description = description;
+      payload._subject = 'New quote request: ' + name + ' (' + roofType + ')';
+      payload._template = 'table';
+      payload._captcha = 'false';
+      req = fetch(FORM_ACTION, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } else {
+      req = fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(fd).toString() });
+    }
+    req
+      .then(function (res) {
+        if (!res || !res.ok) throw new Error('rejected');
+        seq += 1;
+        document.getElementById('confirm-ref').textContent = 'Quote Request FP-0' + seq;
+        document.getElementById('confirm-name').textContent = name;
+        document.getElementById('confirm-phone').textContent = phone;
+        document.getElementById('confirm-address').textContent = address;
+        document.getElementById('confirm-address-row').hidden = !address;
+        document.getElementById('confirm-service').textContent = roofType;
+        document.getElementById('confirm-message').textContent = description;
+        document.getElementById('confirm-message-row').hidden = !description;
+        document.getElementById('panel-form').classList.remove('active');
+        document.getElementById('panel-confirm').classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      })
+      .catch(function () { bad('Something went wrong sending your request. Please call us instead.', btn); });
+  });
+
+  // ---- AI chat widget (client-side FAQ assistant, no external API) ----
+  /* Chat answers are deliberately 1-2 sentences: a reply has to fit the panel
+     without the visitor scrolling up to find the start of it. Every entry also
+     carries `c`, the 2-4 tap-able follow-ups shown under it, so nobody has to
+     type unless they want to. */
+  var CHIP_QUOTE = { t: 'Get a free quote', go: '/quote' };
+  var CHIP_CALL = { t: 'Talk to Michael or Junior', tel: '+12566305125' };
+  var CHIP_REPAIR = { t: 'Roof repair', q: 'roof repair leak' };
+  var CHIP_NEW = { t: 'New roof', q: 'new roof replacement' };
+  var CHIP_COST = { t: 'What does it cost?', q: 'cost price' };
+  var CHIP_AREA = { t: 'Do you serve my area?', q: 'service area' };
+  var CHIP_INSURE = { t: 'Insurance claim', q: 'insurance claim storm' };
+  var CHIP_METAL = { t: 'Metal roofing', q: 'metal roof' };
+  var CHIP_TIME = { t: 'How long does it take?', q: 'how long take to' };
+  var CHIP_REPLACE = { t: 'Repair or replace?', q: 'repair or replace' };
+  var CHIP_LIFE = { t: 'How long does a roof last?', q: 'how long does a roof last' };
+  var CHIP_HAIL = { t: 'Do I have hail damage?', q: 'hail damage know if i have' };
+  var CHIP_PREP = { t: 'Do I need to be home?', q: 'need to be home roof day' };
+
+  var FAQS = [
+    { k: ['cost', 'price', 'pricing', 'expensive', 'how much', 'ballpark'],
+      a: "Every roof is priced on its own size and condition, so there's no flat rate. Estimates are free and we usually follow up the same day.",
+      c: [CHIP_QUOTE, CHIP_TIME, CHIP_CALL] },
+    { k: ['service area', 'what area', 'where are you', 'zip code', 'cover my', 'do you serve'],
+      a: "We're in Fort Payne and cover DeKalb, Jackson, Marshall and Etowah counties, plus Guntersville.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['hour', 'open', 'close today'],
+      a: "We're open Monday to Friday, 8:00am to 5:00pm.",
+      c: [CHIP_CALL, CHIP_QUOTE] },
+    { k: ['phone', 'call you', 'number'],
+      a: "Call or text us at (256) 630-5125.",
+      c: [CHIP_CALL, CHIP_QUOTE] },
+    { k: ['email'],
+      a: "Our email is fortpayneroofing@gmail.com.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['address', 'office', 'located'],
+      a: "We're at 1506 Gault Avenue North, Suite A, Fort Payne, AL 35967.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['new roof', 'replacement', 'replace my roof', 'full roof', 'reroof'],
+      a: "A full replacement is a tear-off, new underlayment and flashing, then shingles or metal. We price it after a look at the roof.",
+      c: [CHIP_QUOTE, CHIP_COST, CHIP_METAL] },
+    { k: ['how long', 'take to', 'duration', 'how many days'],
+      a: "Most replacements take one to three days once materials are on site, depending on size and weather.",
+      c: [CHIP_QUOTE, CHIP_COST] },
+    { k: ['insurance', 'claim', 'storm', 'hail', 'wind damage', 'actual cash value', ' acv'],
+      a: "Yes, we handle storm and hail claims regularly and document the damage for your insurer.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['repair', 'leak', 'fix a', 'dripping'],
+      a: "Most leaks come down to bad flashing, a cracked pipe boot, or lifted shingles. We find the real cause before patching anything.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['shingle'],
+      a: "We install architectural asphalt shingles with a full tear-off, new underlayment and new flashing.",
+      c: [CHIP_QUOTE, CHIP_COST] },
+    { k: ['metal roof', 'standing seam', 'metal'],
+      a: "We install standing-seam and exposed-fastener metal. It costs more up front but outlasts shingles by decades.",
+      c: [CHIP_QUOTE, CHIP_COST] },
+    { k: ['commercial', 'flat roof', 'low-slope', 'low slope', 'business roof'],
+      a: "We do shingle, metal and low-slope roofing for commercial buildings, scheduled around your hours if needed.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['warranty', 'guarantee'],
+      a: "Warranty depends on the material and manufacturer used on your job. We'll lay out exactly what's covered with your quote.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['chimney'],
+      a: "We handle chimney flashing and the waterproofing where a chimney meets the roof, a common leak spot.",
+      c: [CHIP_QUOTE, CHIP_REPAIR] },
+    { k: ['financ', 'payment plan'],
+      a: "We haven't published financing details yet. Ask us directly and we'll go over payment options.",
+      c: [CHIP_CALL, CHIP_QUOTE] },
+    { k: ['inspection', 'free estimate', 'free quote', 'estimate'],
+      a: "Estimates are always free, and we usually follow up the same day.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['review', 'recommend', 'rating', 'testimonial'],
+      a: "You can read our Google reviews right here on the site: real customers, real jobs.",
+      c: [CHIP_QUOTE, CHIP_NEW] },
+    { k: ['how many years', 'experience', 'since when', 'history', 'how long in business', 'how long have you'],
+      a: "Fort Payne Roofing has been roofing homes and businesses since 2021.",
+      c: [CHIP_QUOTE, CHIP_REPAIR] },
+    { k: ['emergency', 'tarp', 'urgent', 'active leak'],
+      a: "If you have an active leak right now, call (256) 630-5125 and we'll tarp and stabilise fast.",
+      c: [CHIP_CALL, CHIP_QUOTE] },
+    { k: ['signs i need', 'need a new roof', 'curling', 'missing shingles', 'granules', 'sagging'],
+      a: "Curling or missing shingles, granules in the gutters, daylight in the attic, or a sagging roofline.",
+      c: [CHIP_QUOTE, CHIP_REPAIR, CHIP_CALL] },
+    { k: ['square footage', 'roofing square', 'what is a square'],
+      a: "A roofing “square” is 100 square feet, the unit used to measure and price a job.",
+      c: [CHIP_COST, CHIP_QUOTE] },
+    { k: ['permit'],
+      a: "Most areas require a permit for a full replacement. We sort out what's needed for your address.",
+      c: [CHIP_QUOTE, CHIP_CALL] },
+    { k: ['over the old', 'layover', 're-roof over', 'second layer'],
+      a: "Sometimes possible, but we recommend a full tear-off so we can catch deck damage a layover would hide.",
+      c: [CHIP_QUOTE, CHIP_NEW] },
+    { k: ['repair or replace', 'replace or repair', 'or replace', 'worth repairing', 'should i replace'],
+      a: "A newer roof with one problem spot usually just needs a repair; an old or widely damaged roof is usually better replaced. A free inspection tells you which.",
+      c: [CHIP_QUOTE, CHIP_LIFE, CHIP_CALL] },
+    { k: ['how long does a roof last', 'roof last', 'lifespan', 'life span', 'life expectancy', 'years does a roof', 'too old'],
+      a: "Architectural shingles usually last 20 to 30 years, metal 40 or more. If yours is past 15, a free inspection will tell you how much life is left.",
+      c: [CHIP_QUOTE, CHIP_REPLACE, CHIP_METAL] },
+    { k: ['hail damage', 'know if i have', 'check for damage', 'signs of damage', 'dents', 'roof damaged'],
+      a: "Dents on gutters, vents or the AC unit and granules piling up in the gutters are the usual signs. Don't climb up yourself; we inspect free and document it for insurance.",
+      c: [CHIP_QUOTE, CHIP_INSURE, CHIP_CALL] },
+    { k: ['roof loud', 'loud', 'noisy', 'noise', 'in the rain', 'lightning', 'attract lightning', 'loud is a metal roof', 'metal roof noisy', 'metal roofs loud', 'quiet'],
+      a: "Installed over a solid deck, metal is about as quiet as shingles in the rain, and no, it doesn't attract lightning.",
+      c: [CHIP_QUOTE, CHIP_LIFE, CHIP_COST] },
+    { k: ['be home', 'need to be home', 'roof day', 'install day', 'get ready', 'prepare', 'what to expect', 'be there'],
+      a: "You don't need to be home, just leave yard access. On install day, move cars off the driveway and keep pets inside; we sweep the yard for nails after.",
+      c: [CHIP_QUOTE, CHIP_TIME, CHIP_CALL] },
+    { k: ['human', 'real person', 'talk to someone', 'speak to', 'agent', 'michael', 'junior'],
+      a: "Of course. Call (256) 630-5125 and you'll talk straight to Michael or Junior, not a call centre.",
+      c: [CHIP_CALL, CHIP_QUOTE] },
+    { k: ['thank'],
+      a: "You're welcome! Anything else I can help with?",
+      c: [CHIP_QUOTE, CHIP_REPAIR, CHIP_NEW] },
+    { k: ['hi', 'hello', 'hey there'],
+      a: "Hey! What's going on with your roof?",
+      c: [CHIP_NEW, CHIP_REPAIR, CHIP_QUOTE] }
+  ];
+  var FAQ_FALLBACK = {
+    a: "I'm not sure on that one, but the team is. Call (256) 630-5125 and we'll help you out.",
+    c: [CHIP_CALL, CHIP_QUOTE]
+  };
+  var FAQ_GREETING = "Hi! I'm the Fort Payne Roofing assistant. What can I help you with?";
+  var FAQ_GREETING_CHIPS = [CHIP_NEW, CHIP_REPAIR, CHIP_HAIL, CHIP_QUOTE, CHIP_CALL];
+
+  function findFaqAnswer(text) {
+    var q = text.toLowerCase(), best = null, bestScore = 0;
+    FAQS.forEach(function (entry) {
+      var score = 0;
+      entry.k.forEach(function (kw) { if (q.indexOf(kw) !== -1) score += kw.length; });
+      if (score > bestScore) { bestScore = score; best = entry; }
+    });
+    return best || FAQ_FALLBACK;
+  }
+
+  document.querySelectorAll('.chatbot').forEach(function (root) {
+    var toggleBtn = root.querySelector('.chatbot-toggle');
+    var closeBtn = root.querySelector('.chatbot-close');
+    var messagesEl = root.querySelector('.chatbot-messages');
+    var suggestionsEl = root.querySelector('.chatbot-suggestions');
+    var chatForm = root.querySelector('.chatbot-form');
+    var chatInput = root.querySelector('.chatbot-form input');
+    if (!toggleBtn || !chatForm) return;
+    var started = false;
+
+    function addMessage(role, text) {
+      var div = document.createElement('div');
+      div.className = 'chat-msg ' + role;
+      div.textContent = text;
+      messagesEl.appendChild(div);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function closeChat() {
+      root.classList.remove('is-open');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // A real anchor is clicked rather than assigning location, so the site's
+    // own link handler picks it up and routes without a full page load.
+    function goTo(path) {
+      closeChat();
+      var a = document.createElement('a');
+      a.href = path;
+      document.body.appendChild(a);
+      a.click();
+      a.parentNode.removeChild(a);
+    }
+
+    function renderChips(chips) {
+      suggestionsEl.innerHTML = '';
+      if (!chips || !chips.length) return;
+      chips.forEach(function (chip) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'chip' + (chip.go ? ' chip-go' : '');
+        b.textContent = chip.t;
+        b.addEventListener('click', function () {
+          if (chip.go) return goTo(chip.go);
+          if (chip.tel) { window.location.href = 'tel:' + chip.tel; return; }
+          ask(chip.t, chip.q);
+        });
+        suggestionsEl.appendChild(b);
+      });
+    }
+
+    function ask(shown, query) {
+      addMessage('user', shown);
+      suggestionsEl.innerHTML = '';
+      var typing = document.createElement('div');
+      typing.className = 'chat-typing';
+      typing.innerHTML = '<span></span><span></span><span></span>';
+      messagesEl.appendChild(typing);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+      setTimeout(function () {
+        typing.remove();
+        var entry = findFaqAnswer(query || shown);
+        addMessage('bot', entry.a);
+        renderChips(entry.c || FAQ_GREETING_CHIPS);
+      }, 420);
+    }
+
+    function openChat() {
+      root.classList.add('is-open', 'is-engaged');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      if (!started) {
+        started = true;
+        addMessage('bot', FAQ_GREETING);
+        renderChips(FAQ_GREETING_CHIPS);
+      }
+    }
+
+    toggleBtn.addEventListener('click', function () {
+      root.classList.contains('is-open') ? closeChat() : openChat();
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeChat);
+    chatForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var text = chatInput.value.trim();
+      if (!text) return;
+      chatInput.value = '';
+      ask(text, text);
+    });
+  });
+
+  route();
+  upd();
+  window.__fprReady = true;
+})();
+
+</script>
+</body>
+</html>
