@@ -1223,16 +1223,7 @@ html:not(.js) .reveal, html:not(.js) .reveal-scale, html:not(.js) .reveal-wipe, 
        chooses the file: nothing here plays, pauses or reloads the video. -->
   <script data-keep>(function () { var v = document.getElementById('hero-video');
     if (!v) return;
-    // Portrait AND narrow gets the 9:16 cut. Width alone was wrong: a phone
-    // turned sideways is 568-932px wide and was being handed the vertical
-    // clip, which `cover` then crushed into a thin horizontal slice.
-    if (!window.matchMedia('(max-width: 760px) and (orientation: portrait)').matches) {
-      v.src = '/video/commercial-hero.mp4';
-      v.poster = '/fort-payneroofing-clone/images/hero-wide-still.jpg';
-    }
-    // ONE attempt, once, and only if the browser hasn't already started it.
-    // Deliberately not a retry loop and not tied to any tap — duelling retry
-    // loops are what stopped the video playing at all before.
+    // One real cut for every screen size. No alternate file to swap to.
     v.addEventListener('canplay', function once() {
       v.removeEventListener('canplay', once);
       if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
@@ -1323,43 +1314,7 @@ html:not(.js) .reveal, html:not(.js) .reveal-scale, html:not(.js) .reveal-wipe, 
   </div>
 </section>
 
-<section class="projects section-pad" id="projects">
-  <div class="container">
-    <div class="section-head reveal">
-      <div>
-        <p class="eyebrow">Real jobs</p>
-        <h2 class="reveal-wipe">Before &amp; after</h2>
-      </div>
-      <p>Drag the slider to compare. Both are Fort Payne Roofing jobs. Full tear-offs down to the deck, re-decked and re-roofed.</p>
-    </div>
-    <div class="ba-grid">
-      <div class="ba-item reveal">
-        <div class="ba-slider" tabindex="0" role="slider" aria-label="Before and after comparison, project one" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-          <div class="ba-layer ba-before" data-img="/fort-payneroofing-clone/images/project-1-before.jpg"></div>
-          <div class="ba-layer ba-after" data-img="/fort-payneroofing-clone/images/project-1-after.jpg"></div>
-          <span class="ba-tag is-before">Before</span>
-          <span class="ba-tag is-after">After</span>
-          <div class="ba-empty"><span class="ph">Project photo pair</span><span>project-1-before.jpg &nbsp;/&nbsp; project-1-after.jpg</span></div>
-          <div class="ba-divider"></div>
-          <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="m6 9-3 3 3 3"/><path d="m18 9 3 3-3 3"/></svg></div>
-        </div>
-        <p class="ba-caption"><b>Full roof replacement:</b> old roof and siding torn off, finished in new dimensional shingles.</p>
-      </div>
-      <div class="ba-item reveal reveal-delay-1">
-        <div class="ba-slider" tabindex="0" role="slider" aria-label="Before and after comparison, project two" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-          <div class="ba-layer ba-before" data-img="/fort-payneroofing-clone/images/project-2-before.jpg"></div>
-          <div class="ba-layer ba-after" data-img="/fort-payneroofing-clone/images/project-2-after.jpg"></div>
-          <span class="ba-tag is-before">Before</span>
-          <span class="ba-tag is-after">After</span>
-          <div class="ba-empty"><span class="ph">Project photo pair</span><span>project-2-before.jpg &nbsp;/&nbsp; project-2-after.jpg</span></div>
-          <div class="ba-divider"></div>
-          <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="m6 9-3 3 3 3"/><path d="m18 9 3 3-3 3"/></svg></div>
-        </div>
-        <p class="ba-caption"><b>New construction:</b> from underlayment and starter course to a finished dimensional-shingle roof.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <section class="recent-work section-pad" id="recent-work">
   <div class="container">
